@@ -14,18 +14,44 @@ Dynamic analysis is a deeper analysis of the program to understand hidden functi
 
 Open the unpacked malware into the **x64dbg** debugger and **IDAfree**.
 
+--- 
+
 ### Rebasing the disassembler
 
-Typically programs start at **004010000** but your debugger might start the program at a different address. You will need to rebase the program's address in the disassembler. In x64dbg, scroll up to find the very first address, this is the address that you will need to rebase. Edit->Segements->Rebase Program.
+Typically programs start at **004010000** but your debugger might start the program at a different address. You will need to rebase the program's address in the disassembler. In x64dbg, scroll up to find the very first address, this is the address that you will need to rebase. 
+
+Edit->Segements->Rebase Program.
+
 ![alt text](https://securedorg.github.io/images/dyn2.png "Victim and Sniffer")
+
+--- 
 
 ### Finding the starting point
 
 You will need to sync the debugger and disassembler addresses so you can follow along in both. Let's start with the function offset **xxxx1530**.
-* In IDA, open the functions tab and look for function xxxx1530. Where xxxx should match your rebase address ( If rebase is 01901000, then 01901530 ).
+* In IDA, open the functions tab and look for function xxxx1530. Where xxxx should match your rebase address ( If rebase is **0190**1000, then **0190**1530 ).
 * In x64dbg, CTRL+G to jump to a specific address xxxx1530.
 
 ![alt text](https://securedorg.github.io/images/dyn3.png "IDAmain")
 ![alt text](https://securedorg.github.io/images/dyn4.png "x64dbg Jump")
+
+---
+
+### XOR Decode Function
+
+Remember use the F2, F7, F8, F9 keys to navigate through the debugger. 
+![alt text](https://securedorg.github.io/images/dyn6.png "xordecode")
+
+In **IDA** you saved the offset of the first XorDecode function
+
+![alt text](https://securedorg.github.io/images/dyn8.png "xordecode")
+
+In **x64bdg** find that same offset and add a comment that it is the Xor Decode function. Set a breakpoint using **F2** on that function. Then run the program until the breakpoin using **F9**. Step into that function using **F7**.
+
+![alt text](https://securedorg.github.io/images/dyn5.gif "xordecode")
+
+Navigate down to the loop that does the Xor Encoding. Place a breakpoint on the same instructions shown below. Right click on the EBX register and select Follow in Dump. This location is where the decoded string will be stored. After you set your break points, press **F9** to get to the start of the loop, then step through the loops until you see the decoded string.
+
+![alt text](https://securedorg.github.io/images/dyn9.png "xordecode")
 
 [Section 5 <- Back](https://securedorg.github.io/RE101/section5)
