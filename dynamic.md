@@ -42,7 +42,7 @@ You will need to sync the debugger and disassembler addresses so you can follow 
 Remember use the F2, F7, F8, F9 keys to navigate through the debugger. 
 ![alt text](https://securedorg.github.io/images/dyn6.png "xordecode")
 
-In **IDA** you saved the offset of the first XorDecode function
+In **IDA**, get the offset of the XorDecode function you saved prior.
 
 ![alt text](https://securedorg.github.io/images/dyn8.png "xordecode")
 
