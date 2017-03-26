@@ -7,6 +7,8 @@ title: Static Analysis
 
 # Section 5: Static Analysis #
 
+![alt text](https://securedorg.github.io/images/cube2.gif "static cube")
+
 Static analysis is like reading a map for directions on where to go. As you follow through this map you capture notes on what things might look interesting when you actually begin your journey.
 
 This section will teach you how to jump into code in static disassembly then rename and comment on interesting assembly routines that we will debug in **Section 6**.
