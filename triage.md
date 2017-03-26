@@ -7,6 +7,8 @@ title: Triage Analysis
 
 # Section 4: Triage Analysis #
 
+![alt text](https://securedorg.github.io/images/timetriage.gif "hourglass")
+
 Depending on your workload, you want to spend the least amount of time trying to determine what the malware is doing and how to get rid of it. Many malware analysts use their own triage analysis, similar to that in the Emergency Room at the hospital.
 
 You will want to quickly narrow down specific information and indicators before moving on to deeper static and dynamic analysis.
