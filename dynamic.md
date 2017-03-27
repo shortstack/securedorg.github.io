@@ -140,4 +140,4 @@ Step over the create and write file functions to save the decrypted resource to 
 
 Go to the URL in the icon.gif.
 
-[Section 5 <- Back](https://securedorg.github.io/RE101/section5)
+[Section 5 <- Back](https://securedorg.github.io/RE101/section5) | [Next -> Finale](https://securedorg.github.io/RE101/section6.1)
