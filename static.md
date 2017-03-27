@@ -24,11 +24,12 @@ Notice in CFF explorer that there is UPX in the header.
 
 When you open the executable in IDA, you will notice large section of non-disassembled code.
 
-![alt text](https://securedorg.github.io/images/triage4.png "IDA UPX")
+[![alt text](https://securedorg.github.io/images/triage4.png "IDA UPX")](https://securedorg.github.io/images/triage4.png)
 
 Because UPX is a common packer, there are many tools that offer unpacking for UPX. Open the executable in PE Explorer which will unpack the binary automatically. Save the file with a name to identify it as unpacked.
 
-![alt text](https://securedorg.github.io/images/triage5.png "Unpacking UPX")
+*Click Image to Enlarge*
+[![alt text](https://securedorg.github.io/images/triage5.png "Unpacking UPX")](https://securedorg.github.io/images/triage5.png)
 
 ---
 
@@ -56,7 +57,8 @@ This string is a typical registry key path to allow programs to autorun/startup 
 
 Using the **X** key we can jump to the reference of that string in the assembly code.
 
-![alt text](https://securedorg.github.io/images/static2.gif "Strings window")
+*Click Image to Enlarge*
+[![alt text](https://securedorg.github.io/images/static2.gif "Strings window")](https://securedorg.github.io/images/static2.gif)
 
 This function is offset **00401340**. Notice in that function is setting a registry key using Window API [RegOpenKeyEx](https://msdn.microsoft.com/en-us/library/windows/desktop/ms724897%28v=vs.85%29.aspx?f=255&MSPPError=-2147217396).
 
