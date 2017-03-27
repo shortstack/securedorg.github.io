@@ -46,7 +46,8 @@ Import Functions:
 ### File System IOC
 
 CreateFile	C:\Users\victim\AppData\Roaming\dope.exe CreateFile icon.gif
-Network IOC
+
+### Network IOC
 
 GET /ayy HTTP/1.1 
 
