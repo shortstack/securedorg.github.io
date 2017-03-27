@@ -34,7 +34,7 @@ This diagram shows the relationship of application components for user-mode and 
 
 ## PE Header ##
 
-The PE header provides the information to operating system on how to map the file into memory.
+The PE header provides information to operating system on how to map the file into memory.
 The executable code has designated regions that require a different memory protection (RWX)
 - Read
 - Write
@@ -69,7 +69,7 @@ This diagram illustrates how the PE is placed into memory.
 
 ## The Stack ##
 
-- Data is either pushed onto or pop off of the stack data structure
+- Data is either pushed onto or popped off of the stack data structure
 - **EBP** - Base Pointer is the register that used to store the references in the stack frame
 
 This diagram represents a typical stack frame.

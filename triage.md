@@ -57,7 +57,7 @@ Questions to ask:
 
 ### Collect Strings
 
-* using the string command in linux or BinText tool, extract the strings to find any clues
+* Using the string command in linux or BinText tool, extract the strings to find any clues
 
 ### Check AV vendors
 

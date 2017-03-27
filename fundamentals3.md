@@ -41,7 +41,7 @@ Common Instructions
 * **jmp, jne, jnz, jnb** (Control Flow) 
 * **push, pop, call, leave, enter, ret** (Control Flow)
 
-Example below is moving value 0xaaaaaaaa into ecx.
+Example below is moving value at 0xaaaaaaaa into ecx.
 
 | Instruction | Opcode |
 | --- | --- |

@@ -11,7 +11,7 @@ title: Intro
 
 # Reverse Engineering #
 
-"is the processes of extracting knowledge or design information from anything man-made and re-producing it or re-producing anything based on the extracted information"
+"is the processes of extracting knowledge or design information from anything man-made and re-producing it or re-producing anything based on the extracted information"[1](https://en.wikipedia.org/wiki/Reverse_engineering)
 
 ## What does it mean to be a reverse engineer? ##
 
