@@ -26,7 +26,7 @@ This checklist should get you started:
 
 ## Download the Unknown Malware 
 
-[**HERE**](https://drive.google.com/file/d/0B_0DJl2kuzoNZkpveEtiMWJKWDA/view?usp=sharing)
+[**HERE**](https://drive.google.com/open?id=0B_0DJl2kuzoNRTEtQmx0SjJYZXc)
 
 ---
 
