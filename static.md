@@ -24,6 +24,7 @@ Notice in CFF explorer that there is UPX in the header.
 
 When you open the executable in IDA, you will notice large section of non-disassembled code.
 
+*Click Image to Enlarge*
 [![alt text](https://securedorg.github.io/images/triage4.png "IDA UPX")](https://securedorg.github.io/images/triage4.png)
 
 Because UPX is a common packer, there are many tools that offer unpacking for UPX. Open the executable in PE Explorer which will unpack the binary automatically. Save the file with a name to identify it as unpacked.
@@ -149,7 +150,8 @@ jle short loc_401634 ; jump to relative offset 401634 if the previous condition 
 
 Next scroll down through and find the order of API function calls in the program. You should make note of all the function offsets.
 
-![alt text](https://securedorg.github.io/images/static8.gif "program scrolling")
+*Click Image to Enlarge*
+[![alt text](https://securedorg.github.io/images/static8.gif "program scrolling")](https://securedorg.github.io/images/static8.gif)
 
 Some of the more interesting API Calls from the image above. Look up what each function does, many are self explanatory.
 
