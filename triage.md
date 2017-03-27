@@ -24,6 +24,12 @@ This checklist should get you started:
 - Quick VM Detonation
 - Capture network information
 
+## Download the Unknown Malware 
+
+[**HERE**](https://drive.google.com/file/d/0B_0DJl2kuzoNZkpveEtiMWJKWDA/view?usp=sharing)
+
+---
+
 ### File Context and Delivery
 
 When you receive the malware binary, it's important to ask how the malware got there in the first place.
