@@ -28,12 +28,12 @@ The x86 architecture is **little-endian**, meaning that multi-byte values are wr
 Each Instruction represents opcodes (hex code) that tell the machine what to do next.
 
 Three categories of instructions:
-* Data Movement
+* Data Movement/Access
 * Arithmetic / Logic
 * Control-Flow
 
 Common Instructions
-* **mov, lea** (data movement)
+* **mov, lea** (data movement, data access)
 * **add, sub** (arithmetic)
 * **or, and, xor** (Logic)
 * **shr, shl** (Logic)
