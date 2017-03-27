@@ -9,7 +9,7 @@ title: Fundamentals
 
 ## Enviroment Setup ##
 
-In this section you will be setting up a safe virtual malware analysis environment. The virtual machine (VM) that you will be running the malware on should not have internet access nor network share access to the host system. This VM will be designate as the **Victim VM**. On the other hand, the **Sniffer VM** will have a passive role in serving and monitoring the internet traffic of the Victim VM. This connection remains on a closed network within virtualbox.
+In this section you will be setting up a safe virtual malware analysis environment. The virtual machine (VM) that you will be running the malware on should not have internet access nor network share access to the host system. This VM will be designated as the **Victim VM**. On the other hand, the **Sniffer VM** will have a passive role in serving and monitoring the internet traffic of the Victim VM. This connection remains on a closed network within virtualbox.
 
 ### Installing VirtualBox ###
 
