@@ -24,6 +24,8 @@ This checklist should get you started:
 - Quick VM Detonation
 - Capture network information
 
+---
+
 ## Download the Unknown Malware 
 
 [**HERE**](https://drive.google.com/open?id=0B_0DJl2kuzoNRTEtQmx0SjJYZXc)
@@ -72,12 +74,15 @@ Questions to ask:
 * Use the VM detonation service to capture any network connections or packet data.
 * If you can't do this then we will need to dynamically debug the malware.
 
+---
+
 ## Malware Analysis Report
 
 You will want to capture this information throughout your investigation either through notes or report documents.
 
 You can use the **Malware Analysis Report** template [HERE](https://securedorg.github.io/ReportForm.html)
 
+---
 
 ## LAB 1
 

@@ -13,6 +13,7 @@ Static analysis is like reading a map for directions on where to go. As you foll
 
 This section will teach you how to jump into code in static disassembly then rename and comment on interesting assembly routines that we will debug in **Section 6**.
 
+---
 
 ## LAB 2
 
@@ -126,7 +127,8 @@ Let's use the tool **XORSearch** to see if we can find some interesting xor deco
 
 Let's navigate to the start of the program using the **X** key. Use the spacebar to toggle between graph view and text view.
 
-![alt text](https://securedorg.github.io/images/static7.gif "start function")
+*Click Image to Enlarge*
+[![alt text](https://securedorg.github.io/images/static7.gif "start function")](https://securedorg.github.io/images/static7.gif)
 
 It's easy to trace back through the program disassembly, but let's look at some control flow assembly instructions. Remember **jmp, jne, jnz, jnb** are control flow functions.
 
