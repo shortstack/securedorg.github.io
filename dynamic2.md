@@ -10,7 +10,7 @@ title: Dynamic Analysis
 Congrats, you made it through the workshop. All of your notes an debugging you should have come up with a similar control flow like the diagram and report below.
 
 *Click to Enlarge*
-[![alt text](https://securedorg.github.io/images/Diagram.png "diagram")](https://securedorg.github.io/images/diagram.png)
+[![alt text](https://securedorg.github.io/images/Diagram.png "diagram")](https://securedorg.github.io/images/Diagram.png)
 
 
 ## Simple Report
