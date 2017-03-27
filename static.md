@@ -98,21 +98,25 @@ Right before the first **push 0** there is a **mov esi,eax** which means esi = e
 
 When a function returns, the return value is stored in **eax**. So let's look into the function that is being called. It takes a string as the first argument (that is a wicked string), while the second argument might be the string length. Press Enter to jump to the function.
 
-![alt text](https://securedorg.github.io/images/static3.png "Unknown Function")
+*Click Image to Enlarge*
+[![alt text](https://securedorg.github.io/images/static3.png "Unknown Function")](https://securedorg.github.io/images/static3.png)
  
 Scroll down until you find **xor al, 5Ah**. Eventually you will be able to recognize when a string loop is being processed in assembly. In this case, it is **xor** a byte with **5Ah** which is **Z** in [ascii](http://www.asciitable.com/).
- 
-![alt text](https://securedorg.github.io/images/static4.png "Xor routine")
+
+*Click Image to Enlarge*
+[![alt text](https://securedorg.github.io/images/static4.png "Xor routine")](https://securedorg.github.io/images/static4.png)
 
 We can assume that this function is doing some kind of Xor encoding. So let's rename this function as XorDecode. We will need this information later when we debug in Section 6.
 
-![alt text](https://securedorg.github.io/images/static5.png "Rename function")
+*Click Image to Enlarge*
+[![alt text](https://securedorg.github.io/images/static5.png "Rename function")](https://securedorg.github.io/images/static5.png)
 
 Let's use the tool **XORSearch** to see if we can find some interesting xor decoded strings. Open the terminal **cmd.exe** from the start bar, and navigate to the XORSearch.exe
 
 ```XORSearch.exe <Path to Unknown.exe> "A string to test"```
 
-![alt text](https://securedorg.github.io/images/static6.png "xor search")
+*Click Image to Enlarge*
+[![alt text](https://securedorg.github.io/images/static6.png "xor search")](https://securedorg.github.io/images/static6.png)
 
 **"Yo this is dope!"** How weird.
 
@@ -128,7 +132,8 @@ It's easy to trace back through the program disassembly, but let's look at some 
 
 **Jump Examples**
 
-![alt text](https://securedorg.github.io/images/static9.gif "jz jump")
+*Click Image to Enlarge*
+[![alt text](https://securedorg.github.io/images/static9.gif "jz jump")](https://securedorg.github.io/images/static9.gif)
 
 ```assembly
 jz loc_401962 ; jump too offset loc_401962 if the previous condition is zero

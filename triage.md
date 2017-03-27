@@ -94,16 +94,21 @@ You can use the **Malware Analysis Report** template [HERE](https://securedorg.g
 7. Quick Detonation
 
 The point of the quick detonation is to capture the filesystem, registry, and connection activity. The VMs are set up in such a way that the Victim VM's internet traffic is captured by the Sniffer VM.
+
 ![alt text](https://securedorg.github.io/images/triageVMs.gif "Victim and Sniffer")
 
 On the **Sniffer VM** open the terminal and run `sudo wireshark` to get Wireshark sniffing the traffic from the Victim VM. Be sure InetSim is still running, see the fundamentals Section 1 on how to start up InetSim.
 
 On the **Victim VM** open the SysInternals **procmon.exe** and **procexp.exe** so that we can monitor filesystem and process events.
-![alt text](https://securedorg.github.io/images/triageVMs2.gif "Victim and Sniffer")
+
+*Click Image to Enlarge*
+[![alt text](https://securedorg.github.io/images/triageVMs2.gif "Victim and Sniffer")](https://securedorg.github.io/images/triageVMs2.gif)
 
 Go ahead and detonate the the malware.
 
-On the **Sniffer VM** look for an HTTP request. Right click and Follow->TCP Stream. I will display the HTTP get request that was sent by the malware.
-![alt text](https://securedorg.github.io/images/triageVMs3.gif "Victim and Sniffer")
+On the **Sniffer VM** look for an **HTTP** request. Right click and **Follow->TCP Stream**. I will display the HTTP get request that was sent by the malware.
+
+*Click Image to Enlarge*
+[![alt text](https://securedorg.github.io/images/triageVMs3.gif "Victim and Sniffer")](https://securedorg.github.io/images/triageVMs3.gif)
 
 [Section 3 <- Back](https://securedorg.github.io/RE101/section3) | [Next -> Section 5](https://securedorg.github.io/RE101/section5)

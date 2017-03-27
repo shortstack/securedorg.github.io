@@ -41,10 +41,14 @@ The executable code has designated regions that require a different memory prote
 - Execute
 
 This diagram shows how this header is broken up.
-![alt text](https://securedorg.github.io/images/PE32.png "PE 32 Header")
+
+*Click to Enlarge*
+[![alt text](https://securedorg.github.io/images/PE32.png "PE 32 Header")](https://securedorg.github.io/images/PE32.png)
 
 Here is a hexcode dump of a PE header we will be working with.
-![alt text](https://securedorg.github.io/images/PEHeader.gif "PE 32 Header Animated")
+
+*Click to Enlarge*
+[![alt text](https://securedorg.github.io/images/PEHeader.gif "PE 32 Header Animated")](https://securedorg.github.io/images/PEHeader.gif)
 
 ---
 

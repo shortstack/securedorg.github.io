@@ -113,18 +113,20 @@ The **EIP** register contains the address of the next instruction to be executed
 
 ## Hello World ##
 
-![alt text](https://securedorg.github.io/images/helloworld.gif "Hello World")
+*Click Image to Enlarge*
+[![alt text](https://securedorg.github.io/images/helloworld.gif "Hello World")](https://securedorg.github.io/images/helloworld.gif)
 
 ## Calling a Function ##
 
 ### Arguments on the Stack ###
 
-![alt text](https://securedorg.github.io/images/FunctionCall.gif "Function Arguments")
+*Click Image to Enlarge*
+[![alt text](https://securedorg.github.io/images/FunctionCall.gif "Function Arguments")](https://securedorg.github.io/images/FunctionCall.gif)
 
 ### Local Variables on the Stack ###
 
-![alt text](https://securedorg.github.io/images/FunctionCall2.gif "Function Locals")
-
+*Click Image to Enlarge*
+[![alt text](https://securedorg.github.io/images/FunctionCall2.gif "Function Locals")](https://securedorg.github.io/images/FunctionCall2.gif)
 
 [1]: https://en.wikibooks.org/wiki/X86_Assembly/X86_Architecture
 
