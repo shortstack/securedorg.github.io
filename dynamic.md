@@ -56,4 +56,88 @@ Navigate down to the loop that does the Xor Encoding. Place a breakpoint on the 
 *Click to Enlarge*
 [![alt text](https://securedorg.github.io/images/dyn9.png "xordecode")](https://securedorg.github.io/images/dyn9.png)
 
+---
+
+### Navigating to the Internet Request
+
+We want to manipulate the control flow instructions so that we can get to the network connection API call. We know that the program will first **copy** and then **delete** itself after it checks if the file doesn't exists using GetFileAttributes API. Continue to step to the **jne** (jump if not equal) instruction. By double clicking the **ZF flag** we can manipulate the result 1 to 0. This means it will make the jump past the Copfile API.
+
+*Click to Enlarge*
+[![alt text](https://securedorg.github.io/images/dyn10.gif "ZF Flag")](https://securedorg.github.io/images/dyn10.gif)
+
+Once you get past the delete API, there is that weird string you saw during static analysis. Step over (**F8**) the XorDecode function and notice the EAX register. It is the URL that was in the internet traffic from the triage analysis. 
+
+*Click to Enlarge*
+[![alt text](https://securedorg.github.io/images/dyn11.png "Nav to Internet")](https://securedorg.github.io/images/dyn11.png)
+
+---
+
+### Manipulate the HTTP request outcome
+
+The VM was not connected to the internet but instead InetSim. What will happen when you manipulate the control flow to get past the internet connection failure? Go ahead and step past the internet connection and manipulate the control flow flag ZF to do so.
+
+*Click to Enlarge*
+[![alt text](https://securedorg.github.io/images/dyn12.gif "Nav past Internet")](https://securedorg.github.io/images/dyn12.gif)
+
+It must have been a very funny joke. **l** **m** **a** **o**
+
+---
+
+### There is a message for you
+
+It seems that the malware was waiting for the word **lmao** to display a message. Navigate to the Messagebox api. Set a breakpoint on and after the function call, this will ensure that it will prevent you from skipping any hidden functionality. Go ahead and press **F9** to run the MessageBox function.
+
+*Click to Enlarge*
+[![alt text](https://securedorg.github.io/images/dyn13.gif "Yo this is Dope")](https://securedorg.github.io/images/dyn13.gif)
+
+---
+
+### Extracting the Resource
+
+The CFF explorer from the triage analysis revealed that there was a resource called **BIN**. Step through the program to get the location of the loaded resource after **LockResource**. Remember function return the output in register **EAX**.  Notice `mov edi,eax` is where the output is stored in **EDI**.
+
+*Click to Enlarge*
+[![alt text](https://securedorg.github.io/images/dyn14.png "ResourceLoad")](https://securedorg.github.io/images/dyn14.png)
+
+---
+
+### Crypto Function
+
+We can assume that the malware is going to decrypt this string based on the function arguments for [CryptStringToBinary](https://msdn.microsoft.com/en-us/library/windows/desktop/aa380285.aspx).
+
+```C++
+BOOL WINAPI CryptStringToBinary(
+  _In_    LPCTSTR pszString, //Arg 1
+  _In_    DWORD   cchString,
+  _In_    DWORD   dwFlags, // Arg 3 Format of the string converted
+  _In_    BYTE    *pbBinary,
+  _Inout_ DWORD   *pcbBinary,
+  _Out_   DWORD   *pdwSkip,
+  _Out_   DWORD   *pdwFlags
+);
+```
+
+*Click to Enlarge*
+[![alt text](https://securedorg.github.io/images/dyn15.png "CryptString")](https://securedorg.github.io/images/dyn15.png)
+
+We know that Arg 1 is register **EDI** which is the resource we just loaded into memory and Arg 3 is 1. The CryptStringToBinary dwflag `0x00000001` means `CRYPT_STRING_BASE64`. Dump the address of EDI into one of the dump windows. This data definitely looks like base64 encoded strings. Step over these functions until past the second CryptStringToBinary call. The result will be placed in register **ESI**. Dump the address in the ESI register. Notice anything weird about the first 3 characters?
+
+*Click to Enlarge*
+[![alt text](https://securedorg.github.io/images/dyn16.png "Post CryptString")](https://securedorg.github.io/images/dyn16.png)
+
+---
+
+### CreateFile and ShellExecute
+
+Step over the create and write file functions to save the decrypted resource to the file system. Note that this file is saved as **icon.gif**. Next step until the start of the arguments for the ShellExecute call. It looks as if it's using the environment to open the newly created file. The program will finally be done. Open the image and record what you see.
+
+*Click to Enlarge*
+[![alt text](https://securedorg.github.io/images/dyn17.gif "ShellExecute")](https://securedorg.github.io/images/dyn17.gif)
+
+---
+
+### Finale
+
+Go to the URL in the icon.gif.
+
 [Section 5 <- Back](https://securedorg.github.io/RE101/section5)
