@@ -39,7 +39,7 @@ You will need to sync the debugger and disassembler addresses so you can follow 
 
 ### XOR Decode Function
 
-Remember use the F2, F7, F8, F9 keys to navigate through the debugger. 
+Remember use the F2(breakpoint), F7(Step Into), F8(Step Over), F9(Run) keys to navigate through the debugger. 
 ![alt text](https://securedorg.github.io/images/dyn6.png "xordecode")
 
 In **IDA**, get the offset of the XorDecode function you saved prior.
@@ -48,10 +48,12 @@ In **IDA**, get the offset of the XorDecode function you saved prior.
 
 In **x64bdg** find that same offset and add a comment that it is the Xor Decode function. Set a breakpoint using **F2** on that function. Then run the program until the breakpoin using **F9**. Step into that function using **F7**.
 
-![alt text](https://securedorg.github.io/images/dyn5.gif "xordecode")
+*Click to Enlarge*
+[![alt text](https://securedorg.github.io/images/dyn5.gif "xordecode")](https://securedorg.github.io/images/dyn5.gif)
 
-Navigate down to the loop that does the Xor Encoding. Place a breakpoint on the same instructions shown below. Right click on the EBX register and select Follow in Dump. This location is where the decoded string will be stored. After you set your break points, press **F9** to get to the start of the loop, then step through the loops until you see the decoded string.
+Navigate down to the loop that does the Xor Encoding. Place a breakpoint on the same instructions shown below. Right click on the EBX register and select Follow in Dump. This location is where the decoded string will be stored. After you set your break points, press **F9** to get to the start of the loop, then step through the loops until you see the decoded string in the dump.
 
-![alt text](https://securedorg.github.io/images/dyn9.png "xordecode")
+*Click to Enlarge*
+[![alt text](https://securedorg.github.io/images/dyn9.png "xordecode")](https://securedorg.github.io/images/dyn9.png)
 
 [Section 5 <- Back](https://securedorg.github.io/RE101/section5)
