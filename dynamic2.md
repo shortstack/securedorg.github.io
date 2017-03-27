@@ -67,6 +67,7 @@ RegQueryValue	HKCU\Software\Microsoft\Windows\CurrentVersion\Run\dope
 ### Behavior & Control Flow
 
 Processes Created dope.exe
+
 1) Starts by decoding xor strings 
 
 2) Checks to see if dope.exe already exists in %APPDATA% 
