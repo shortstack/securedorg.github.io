@@ -93,7 +93,7 @@ You can use the **Malware Analysis Report** template [HERE](https://securedorg.g
 3. Check the file header by opening the file in the hex editor **HxD**
 * Notice the first 1 byte is **MZ** meaning it's a PE Binary
 ![alt text](https://securedorg.github.io/images/triage1.png "MZ Header")
-4. Now right click the file and select **CFF explorer** to check the PE header
+4. Add the file extension **.exe** to the **Unknown** file so that it reads as **Unknown.exe**. Now right click the file and select **CFF explorer** to check the PE header
 * Note the imports it's using
 ![alt text](https://securedorg.github.io/images/triage3.png "Imports")
 5. Calculate the hash using **quickhash**, go to virustotal.com and search the hash
