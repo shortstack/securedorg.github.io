@@ -39,7 +39,8 @@ You will need to sync the debugger and disassembler addresses so you can follow 
 
 ### XOR Decode Function
 
-Remember use the F2(breakpoint), F7(Step Into), F8(Step Over), F9(Run) keys to navigate through the debugger. 
+Remember use the F2(breakpoint), F7(Step Into), F8(Step Over), F9(Run) keys to navigate through the debugger. If you accidentally run past the end the of the program you can always restart by clicking ![alt text](https://securedorg.github.io/images/restart.png "restart").
+
 ![alt text](https://securedorg.github.io/images/dyn6.png "xordecode")
 
 In **IDA**, get the offset of the XorDecode function you saved prior.
