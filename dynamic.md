@@ -46,7 +46,7 @@ In **IDA**, get the offset of the XorDecode function you saved prior.
 
 ![alt text](https://securedorg.github.io/images/dyn8.png "xordecode")
 
-In **x64bdg** find that same offset and add a comment that it is the Xor Decode function. Set a breakpoint using **F2** on that function. Then run the program until the breakpoin using **F9**. Step into that function using **F7**.
+In **x64bdg** find that same offset and add a comment that it is the Xor Decode function. Set a breakpoint using **F2** on that function. Then run the program until the breakpoint using **F9**. Step into that function using **F7**.
 
 *Click to Enlarge*
 [![alt text](https://securedorg.github.io/images/dyn5.gif "xordecode")](https://securedorg.github.io/images/dyn5.gif)
