@@ -12,13 +12,13 @@ title: Dynamic Analysis
 ## LAB 3
 Dynamic analysis is a deeper analysis of the program to understand hidden functionality not understood statically. The static analysis will serve as a guide for stepping through the program in a debugger.
 
-Open the unpacked malware into the **x64dbg** debugger and **IDAfree**.
+Open the unpacked malware into the **x32dbg.exe** (refered as x64dbg) debugger and **IDAfree**.
 
 --- 
 
 ### Rebasing the disassembler
 
-Typically programs start at **004010000** but your debugger might start the program at a different address. You will need to rebase the program's address in the disassembler. In x64dbg, scroll up to find the very first address, this is the address that you will need to rebase. 
+Typically programs start at **004010000** but your debugger might start the program at a different address. You will need to rebase the program's address in the disassembler. In x64dbg, after you hit run or **F9**, it will stop you at the EntryPoint. Scroll up to find the very first address, this is the address that you will need to rebase. 
 
 Edit->Segements->Rebase Program.
 
