@@ -21,7 +21,9 @@ For windows and osx, follow the instructions in the install binary.
 
 ### Download Victim and Sniffer VMs ###
 
-Unzip the files below and open the .ovf file with VirtualBox
+Unzip the files below and open the .ovf or .box file with VirtualBox
+
+These VMs require an **Intel** Architecture. AMD will not work for these snapshots (I will update support for them later).
 
 [Victim VM](https://drive.google.com/file/d/0B_0DJl2kuzoNZkpveEtiMWJKWDA/view?usp=sharing)
 
@@ -49,6 +51,7 @@ Unzip the files below and open the .ovf file with VirtualBox
   * If it doesn't auto appear, navigate to the CD Drive to install
   * Follow install directions from the Guest Additions Dialog
   * Note: it will require install privileges so insert passwords for each VM
+  * Shutdown Both VMs after you have installed the Guest Additions CD.
 2. Victim VM: Devices->Drag and Drop->Bidrectional 
 3. Victim VM: Devices->Shared Clipboard->Bidirectional
 4. Both VMs: Devices->Network->Network Settings
@@ -64,7 +67,7 @@ Unzip the files below and open the .ovf file with VirtualBox
   * In the search bar, type `cmd.exe` to open terminal
   * Run command: `ping 192.168.0.1`
   * Expected output: ![alt text](https://securedorg.github.io/images/PingGateway.png "Ping Output")
-6. Sniffer VM: Devices->Shared Folders->Shared Folders Settings
+8. Sniffer VM: Devices->Shared Folders->Shared Folders Settings
   * On your Host, create a folder called `sniffershare`
   * In virtual box select Add New Shared Folder icon and navigate to the folder you just created (sniffershare)
   * In Sniffer VM, open the terminal and run command:`mkdir ~/host; sudo mount -t vboxsf -o uid=$UID,gid=$(id -g) sniffershare ~/host`
