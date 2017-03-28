@@ -30,6 +30,8 @@ This checklist should get you started:
 
 [**HERE**](https://drive.google.com/open?id=0B_0DJl2kuzoNRTEtQmx0SjJYZXc)
 
+Password is "infected"
+
 ---
 
 ### File Context and Delivery
