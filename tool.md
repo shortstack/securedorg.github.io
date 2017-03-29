@@ -6,7 +6,7 @@ title: RE Tools
 # Required Tools #
 Please download the tools based on the operating system you are running
 
-## Virutal Box ##
+## Virtual Box ##
 
 ### Windows ###
 
