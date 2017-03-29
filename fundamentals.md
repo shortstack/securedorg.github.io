@@ -27,6 +27,7 @@ These VMs require an **Intel** Architecture. AMD will not work for these snapsho
 
 [Victim VM](https://drive.google.com/file/d/0B_0DJl2kuzoNZkpveEtiMWJKWDA/view?usp=sharing)
 
+* MD5sum: 4ad7b30b341db57dffb97e44189aed38
 * OS: Windows 7 Service Pack 1
 * Architecture: Intel 32bit
 * Username: victim
@@ -36,6 +37,7 @@ These VMs require an **Intel** Architecture. AMD will not work for these snapsho
 
 [Sniffer VM](https://drive.google.com/file/d/0B_0DJl2kuzoNT3IwNElLV3VRdms/view?usp=sharing)
 
+* MD5sum: be459de4cdee86f0c35582973356d506
 * OS: Ubuntu 16.04.2 LTS Desktop
 * Architecture: Intel 64bit
 * Username: sniffer
