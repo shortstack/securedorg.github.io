@@ -103,7 +103,7 @@ title: RE Tools
 
 ### Keyboard Layout for IdaFree and x64dbg
 
-![alt text](https://securedorg.github.io/images/keyboarddbg.gif "Keyboad Layout")
+![alt text](https://securedorg.github.io/images/keyboarddbg.gif "Keyboard Layout")
 
 ---
 

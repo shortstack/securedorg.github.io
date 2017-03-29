@@ -12,7 +12,7 @@ title: Dynamic Analysis
 ## LAB 3
 Dynamic analysis is a deeper analysis of the program to understand hidden functionality not understood statically. The static analysis will serve as a guide for stepping through the program in a debugger.
 
-Open the unpacked malware into the **x32dbg.exe** (refered as x64dbg) debugger and **IDAfree**.
+Open the unpacked malware into the **x32dbg.exe** (referred as x64dbg) debugger and **IDAfree**.
 
 --- 
 
