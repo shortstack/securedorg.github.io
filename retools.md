@@ -11,7 +11,7 @@ title: RE Tools
 ## Disassemblers
 
 * [Ida](https://www.hex-rays.com/products/ida/)
-  * Free (Used in this worksop)
+  * Free (Used in this workshop)
   * Pro (Most Popular)
 * [Radare](https://www.radare.org)
 * [Capstone](http://www.capstone-engine.org/)
@@ -20,7 +20,7 @@ title: RE Tools
 
 ## Debuggers
 
-* [x64dbg](http://x64dbg.com/) (Used in this worksop)
+* [x64dbg](http://x64dbg.com/) (Used in this workshop)
 * [Immunity](https://www.immunityinc.com/products/debugger/)
 * [OllyDbg](http://www.ollydbg.de/)  (Most Popular)
 * [WinDbg](https://developer.microsoft.com/en-us/windows/hardware/windows-driver-kit)
@@ -36,15 +36,15 @@ title: RE Tools
 
 ## Information Gathering
 
-* [CFF Explorer](http://www.ntcore.com/exsuite.php) - PE header parser (Used in this worksop)
-* [PE Explorer](http://www.heaventools.com/overview.htm) - PE inspection tool (Used in this worksop)
+* [CFF Explorer](http://www.ntcore.com/exsuite.php) - PE header parser (Used in this workshop)
+* [PE Explorer](http://www.heaventools.com/overview.htm) - PE inspection tool (Used in this workshop)
 * [BinText](https://www.mcafee.com/hk/downloads/free-tools/bintext.aspx) - Extract string from a binary
-* [Sysinternals Suite](https://technet.microsoft.com/en-us/sysinternals/bb842062.aspx) (Used in this worksop)
+* [Sysinternals Suite](https://technet.microsoft.com/en-us/sysinternals/bb842062.aspx) (Used in this workshop)
   * procmon
   * procexplorer
-* [InetSim: Internet Services Simulation Suite](http://www.inetsim.org/downloads.html) (Used in this worksop)
+* [InetSim: Internet Services Simulation Suite](http://www.inetsim.org/downloads.html) (Used in this workshop)
 * [Yara: pattern matching rule engine](https://virustotal.github.io/yara/)
-* [Wireshark](https://www.wireshark.org/download.html) - network sniffing (Used in this worksop)
+* [Wireshark](https://www.wireshark.org/download.html) - network sniffing (Used in this workshop)
 * [API Monitor](http://www.rohitab.com/downloads)
 
 ### Helpful Websites
@@ -60,7 +60,7 @@ title: RE Tools
   
 ## Support
 
-* [HxD Hex Editor](https://mh-nexus.de/en/hxd/) (Used in this worksop)
+* [HxD Hex Editor](https://mh-nexus.de/en/hxd/) (Used in this workshop)
 * [Python](https://www.python.org/downloads/) - used for automating tasks
 
 ---

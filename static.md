@@ -141,7 +141,7 @@ It's easy to trace back through the program disassembly, but let's look at some 
 [![alt text](https://securedorg.github.io/images/static9.gif "jz jump")](https://securedorg.github.io/images/static9.gif)
 
 ```assembly
-jz loc_401962 ; jump too offset loc_401962 if the previous condition is zero
+jz loc_401962 ; jump to offset loc_401962 if the previous condition is zero
 ```
 
 ```assembly
