@@ -21,7 +21,7 @@ For windows and osx, follow the instructions in the install binary.
 
 ### Download Victim and Sniffer VMs ###
 
-Unzip the files below and open the .ovf or .vbox file with VirtualBox
+Please use the utility [7zip](http://www.7-zip.org/download.html). Unzip the files with 7zip below and open the .ovf or .vbox file with VirtualBox. 
 
 These VMs require an **Intel** Architecture. AMD will not work for these snapshots (I will update support for them later).
 
