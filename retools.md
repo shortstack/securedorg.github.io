@@ -94,12 +94,12 @@ title: RE Tools
 
 | Action | Command |
 | --- | --- |
-| Enter comment	| Shift+; |
+| Enter comment	| ; |
 | BreakPoint	| F2 |
 | Step into	| F7 |
 | Step over	| F8 |
 | Run	| F9 |
-| Edit Instruction | Enter |
+| Edit Instruction | Space |
 
 ### Keyboard Layout for IdaFree and x64dbg
 
