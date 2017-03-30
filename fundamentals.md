@@ -49,6 +49,8 @@ These VMs require an **Intel** Architecture. AMD will not work for these snapsho
 
 ### Post Install Instructions ###
 
+**Note:** if you are having problems getting the VM to run, right-click and discard the saved state.
+
 1. Install VirtualBox CD on both VMs: Devices->Insert Guest Additions CD Image
   * If it doesn't auto appear, navigate to the CD Drive to install
   * Follow install directions from the Guest Additions Dialog
