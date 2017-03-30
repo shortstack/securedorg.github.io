@@ -26,7 +26,7 @@ This checklist should get you started:
 
 ---
 
-## Download the Unknown Malware 
+## Download the Unknown Malware
 
 [**HERE**](https://drive.google.com/open?id=0B_0DJl2kuzoNRTEtQmx0SjJYZXc)
 
@@ -91,7 +91,7 @@ You can use the **Malware Analysis Report** template [HERE](https://securedorg.g
 1. Run the Victim VM
 2. Copy over the unknown file
 3. Check the file header by opening the file in the hex editor **HxD**
-* Notice the first 1 byte is **MZ** meaning it's a PE Binary
+* Notice the first 2 bytes are **MZ** meaning it's a PE Binary
 ![alt text](https://securedorg.github.io/images/triage1.png "MZ Header")
 4. Add the file extension **.exe** to the **Unknown** file so that it reads as **Unknown.exe**. Now right click the file and select **CFF explorer** to check the PE header
 * Note the imports it's using
