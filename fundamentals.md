@@ -27,7 +27,7 @@ These VMs require an **Intel** Architecture. AMD will not work for these snapsho
 
 [Victim VM](https://drive.google.com/file/d/0B_0DJl2kuzoNZkpveEtiMWJKWDA/view?usp=sharing)
 
-* MD5sum: 4ad7b30b341db57dffb97e44189aed38
+* MD5sum: 1cf8e12a6671211e71d2496cdcd08b09 **Updated 3/30/2017**
 * OS: Windows 7 Service Pack 1
 * Architecture: Intel 32bit
 * Username: victim
@@ -37,7 +37,7 @@ These VMs require an **Intel** Architecture. AMD will not work for these snapsho
 
 [Sniffer VM](https://drive.google.com/file/d/0B_0DJl2kuzoNT3IwNElLV3VRdms/view?usp=sharing)
 
-* MD5sum: be459de4cdee86f0c35582973356d506
+* MD5sum: 2f663ddb8e354e1cf2abb27376b92022 **Updated 3/30/2017**
 * OS: Ubuntu 16.04.2 LTS Desktop
 * Architecture: Intel 64bit
 * Username: sniffer
@@ -49,7 +49,7 @@ These VMs require an **Intel** Architecture. AMD will not work for these snapsho
 
 ### Post Install Instructions ###
 
-**Note:** if you are having problems getting the VM to run, right-click and discard the saved state.
+**Note:** If you are having problems getting the VM to run, revert to the AnalysisReady snapshot, then right-click on the VM and select discard the saved state.
 
 1. Install VirtualBox CD on both VMs: Devices->Insert Guest Additions CD Image
   * If it doesn't auto appear, navigate to the CD Drive to install
