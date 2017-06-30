@@ -118,9 +118,10 @@ title: RE Tools
 ## Information Gathering: Sysinternals Suite
 
 * advanced system utilities
-* **Procmon** - Monitor processes running on the system
+* **ProcMon** - Monitor processes/thread, files system, network, and registry activity on the system
+* **ProcExp** - Monitor processes running on the system
 
-![alt text](https://securedorg.github.io/images/procmon.png "Procmon")
+![alt text](https://securedorg.github.io/images/procmon.png "ProcExp")
 
 
 [Section 2.1 <- Back](https://securedorg.github.io/RE101/section2.1) | [Next -> Section 4](https://securedorg.github.io/RE101/section4)
