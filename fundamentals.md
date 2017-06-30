@@ -21,29 +21,30 @@ For windows and osx, follow the instructions in the install binary.
 
 ### Download Victim and Sniffer VMs ###
 
-Please use the utility [7zip](http://www.7-zip.org/download.html). Unzip the files with 7zip below and open the .ovf or .vbox file with VirtualBox. 
+Please use the utility [7zip](http://www.7-zip.org/download.html). Unzip the files with 7zip below and in VirtualBox **File->Import** Appliance targeting the .ova file. 
 
-These VMs require an **Intel** Architecture. AMD will not work for these snapshots (I will update support for them later).
 
-[Victim VM](https://drive.google.com/file/d/0B_0DJl2kuzoNZkpveEtiMWJKWDA/view?usp=sharing)
+[Victim VM](https://drive.google.com/open?id=0B_0DJl2kuzoNZkpveEtiMWJKWDA)
 
-* MD5sum: 1cf8e12a6671211e71d2496cdcd08b09 **Updated 3/30/2017**
+* MD5sum: 7d4f2ff359cd74eec3cae7b16a916939 **Updated 6/30/2017**
 * OS: Windows 7 Service Pack 1
 * Architecture: Intel 32bit
 * Username: victim
 * Password: re1012017
 * IP Address: 192.168.0.2
 * Gateway: 192.168.0.1
+* Zip size 3.7G, Final size required 10G
 
-[Sniffer VM](https://drive.google.com/file/d/0B_0DJl2kuzoNT3IwNElLV3VRdms/view?usp=sharing)
+[Sniffer VM](https://drive.google.com/open?id=0B_0DJl2kuzoNT3IwNElLV3VRdms)
 
-* MD5sum: 2f663ddb8e354e1cf2abb27376b92022 **Updated 3/30/2017**
+* MD5sum: f9c9214475560ab0b019654560e9d3b8 **Updated 6/30/2017**
 * OS: Ubuntu 16.04.2 LTS Desktop
 * Architecture: Intel 64bit
 * Username: sniffer
 * password re1012017
 * IP Address: 192.168.0.1
 * Gateway: 192.168.0.1
+* Zip size 1.9G, Final size required 6G
 
 ---
 
@@ -62,6 +63,7 @@ These VMs require an **Intel** Architecture. AMD will not work for these snapsho
   *  Select Attached to `Internal Network`
   *  Name should mirror both VMs. Default is `intnet`
 5. Run/Play both VMs to verify network connectivity
+  * **Important** While running, take a snapshot of each VM and name each "Clean". This will save a clean slate for you to revert the VM image back to.
 6. Sniffer VM: Ensure `inetsim` is running
   * Open terminal and run: `ps -ef | grep inetsim`
   * If no output, run: `/etc/init.d/inetsim start`
