@@ -111,7 +111,8 @@ Notice that the output looks like the header of a PE executable. The only differ
 
 Step through the rest until you reach a call to `sub_4031A9` at `00404C81`. You will find that it uses CreateProcess to spawn a new process of the newly created PE without dropping it to disk. After you step over the call to CreateProcess, you can open Process Explorer to view the newly created child process.
 
-![alt text](https://securedorg.github.io/RE102/images/Section6_createprocess.png "Section6_createprocess")
+*Click to Enlarge*
+[![alt text](https://securedorg.github.io/RE102/images/Section6_createprocess.png "Section6_createprocess")](https://securedorg.github.io/RE102/images/Section6_createprocess.png)
 
 Now that you know the algorithm, you can create a unpacking script for the resource. The next page will go over the script.
 
