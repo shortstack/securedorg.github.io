@@ -7,7 +7,7 @@ title: Setup
 
 # Section 6.1: The Unpacking Script #
 
-Here is the full unpacking script. Extract the raw resource 1000 as a binary file as the first argument. It will output the exe as decrypted_payload.exe
+Here is the full unpacking script. Extract the raw resource 1000 as a binary file as the first argument. It will output the exe as decrypted_payload.exe. You can also find this script here: [re102_unpacker.py](https://github.com/securedorg/securedorg.github.io/blob/master/RE102/%5Csecuredorg.github.io/RE102/re102_unpacker.py)
 
 ```
 import os
