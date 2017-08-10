@@ -7,6 +7,8 @@ title: Setup
 
 # Section 7: Extra Fun #
 
+![alt text](https://securedorg.github.io/RE102/images/SectionFun_intro.gif "intro")
+
 This concludes the workshop but you can apply the same unpacker to the resources in this malware. The payload exe is:
 1. UPX packed
 2. Has 3 resources using the same packer
