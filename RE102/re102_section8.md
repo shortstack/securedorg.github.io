@@ -7,6 +7,8 @@ title: Setup
 
 # Section 8: Conclusion #
 
+![alt text](https://securedorg.github.io/RE102/images/typing.gif "intro")
+
 This concludes workshop RE102. I hope you enjoyed the levels of obfuscation and evasion. Here is a summary of what the malware’s packer does.
 
 ```
