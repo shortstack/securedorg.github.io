@@ -50,7 +50,8 @@ At the very end of the function it jumps to `loc_404777` where it calls `sub_403
 
 If you follow the stack argument DWORD in the dump you can see the full strings. To view this, right click on the stack argument and select **Follow DWORD in dump**.
 
-![alt text](https://securedorg.github.io/RE102/images/Section5.2_hardwarestrings.png "Section5.2_hardwarestrings")
+*Click to Enlarge*
+[![alt text](https://securedorg.github.io/RE102/images/Section5.2_hardwarestrings.png "Section5.2_hardwarestrings")](https://securedorg.github.io/RE102/images/Section5.2_hardwarestrings.png)
 
 Open regedit.exe in Windows and verify that this registry key exists under HKEY_LOCAL_MACHINE. If this key exists RegOpenKeyEx will return 0, if not 2. In the debugger, Step over **F8** this function call. Fortunately this VM was built with an IDE instead of scsi hardware. You can verify this by looking at Virtualbox’s storage settings.
 
