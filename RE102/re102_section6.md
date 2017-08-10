@@ -116,4 +116,4 @@ Step through the rest until you reach a call to `sub_4031A9` at `00404C81`. You 
 
 Now that you know the algorithm, you can create a unpacking script for the resource. The next page will go over the script.
 
-[Section 5.2 <- Back](https://securedorg.github.io/RE102/section5.1) | [Next -> Section 6.1](https://securedorg.github.io/RE102/section6.1)
+[Section 5.2 <- Back](https://securedorg.github.io/RE102/section5.2) | [Next -> Section 6.1](https://securedorg.github.io/RE102/section6.1)
