@@ -34,7 +34,8 @@ Now press **F9** to run the program to breakpoints until you reach `004019E4`.
 
 Scroll down to check out offset `00405272`. Looks like the `[esp+1C]` is using Path Windows APIs to check the strings against sample, sandbox, and virus. Since your exe name is and path does not contain these words, it will not take the jump. Thus, no need  to change the flags or patch the instruction. Keep pressing **F8** (to step over the instruction) until you reach the offset `00405277`.
 
-![alt text](https://securedorg.github.io/RE102/images/Section5.1_405272.png "Section5.1_405272")
+*Click to Enlarge*
+[![alt text](https://securedorg.github.io/RE102/images/Section5.1_405272.png "Section5.1_405272")](https://securedorg.github.io/RE102/images/Section5.1_405272.png)
 
 **Congrats!** You bypassed the first evasion technique deployed by this malware . Now that you know what these API calls are, you should be renaming the subroutines in your IDA with appropriate labels.
 
@@ -80,7 +81,8 @@ Once you exported the resource 1000, open the decrypted_shellcode.exe with CFF e
 
 Keep stepping until you reach `0040416F` where you will see that the resource is being placed into a new memory allocation. Remember that VirtualAlloc is typically followed by a ‘mov instruction’. After the VirtualAlloc function is returned make sure you note the address of the newly allocated memory. As before, this function will put the address of the allocated memory in the `eax` register (the returned value).
 
-![alt text](https://securedorg.github.io/RE102/images/Section5.1_savingresource.png "Section5.1_savingresource")
+*Click to Enlarge*
+[![alt text](https://securedorg.github.io/RE102/images/Section5.1_savingresource.png "Section5.1_savingresource")](https://securedorg.github.io/RE102/images/Section5.1_savingresource.png)
 
 Once you are done stepping through function `sub_40487D` step until you reach `loc_4014C2`.
 
@@ -88,7 +90,8 @@ Once you are done stepping through function `sub_40487D` step until you reach `l
 
 The size 0x318 is a common theme for the next couple of function calls. This is where you will see another combo  of VirtualAlloc and `mov`.  It will store the first 0x318 bytes into the newly allocated memory.
 
-![alt text](https://securedorg.github.io/RE102/images/Section5.1_Virtualloc318.png "Section5.1_Virtualloc318")
+*Click to Enlarge*
+[![alt text](https://securedorg.github.io/RE102/images/Section5.1_Virtualloc318.png "Section5.1_Virtualloc318")](https://securedorg.github.io/RE102/images/Section5.1_Virtualloc318.png)
 
 ![alt text](https://securedorg.github.io/RE102/images/Section5.1_move_decrypt.png "Section5.1_move_decrypt")
 
