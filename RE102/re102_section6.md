@@ -7,6 +7,8 @@ title: Setup
 
 # Section 6: Identifying Packing #
 
+![alt text](https://securedorg.github.io/RE102/images/Section7_intro.gif "intro")
+
 This section will focus on identifying a custom packing routine. Believe it or not this whole shellcode executable is a packer itself. The next several functions will reveal its algorithm, and you will be able to create a simple unpacking script.
 
 ## The Bat and Vbs Scripts ##
