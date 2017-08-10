@@ -62,7 +62,7 @@ If you are not familiar with mathematical equivalent of bitwise operations, it i
 
 ---
 
-Loop 2: Fill the Stack 0x100 characters
+## Loop 2: Fill the Stack 0x100 characters ##
 
 This next loop fills the stack starting at `[ebp+var_418]`. It loops for 0x100 times or 256 decimal while incrementing ebx from 0 to 255.
 
