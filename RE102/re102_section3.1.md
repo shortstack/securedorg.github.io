@@ -13,7 +13,8 @@ Go ahead and open IDAfree and load the malware. Give IDA some time to parse all 
 
 The previous page talked about the delphi structure. Note: IDAPro provides better delphi library support and will automatically name library references for you. You should be able to identify the InitExe and the array of classes at offset [dword](https://msdn.microsoft.com/en-us/library/cc230318.aspx?f=255&MSPPError=-2147217396) at `0045BB5C`.  Double-click on offset `dword_45BB5C`. Notice that this looks like the array discussed on the previous page. 
 
-![alt text](https://securedorg.github.io/RE102/images/Section3.1_delphi2.gif "Section3.1_delphi2")
+*Click to Englarge*
+[![alt text](https://securedorg.github.io/RE102/images/Section3.1_delphi2.gif "Section3.1_delphi2")](https://securedorg.github.io/RE102/images/Section3.1_delphi2.gif)
 
 ---
 
@@ -27,7 +28,8 @@ In the information gathering stage, the strings revealed that there was some jun
 
 Double-Click the first instance of the junk data. At this point is should show you the location in the IDA View. Scroll up until you see a `unk` reference to the start of this data. It should say `unk_45CCD4`. You want to follow this reference in the code by selecting and then press ‘x’ to open the xrefs menu. This menu shows all the functions and locations that reference the object. Select the only function present and press `ok`.
 
-![alt text](https://securedorg.github.io/RE102/images/Section3.1_junkstrings.gif "Section3.1_junkstrings")
+*Click to Englarge*
+[![alt text](https://securedorg.github.io/RE102/images/Section3.1_junkstrings.gif "Section3.1_junkstrings")](https://securedorg.github.io/RE102/images/Section3.1_junkstrings.gif)
 
 IDA should have landed you in the function that is using this data. Notice anything fishy about this function? 
 
