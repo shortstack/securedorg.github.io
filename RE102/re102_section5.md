@@ -9,25 +9,25 @@ title: Setup
 
 ![alt text](https://securedorg.github.io/RE102/images/Section5_intro.gif "intro")
 
-This section will focus on identifying various Evasion Techniques as well as working around them during the debugging phase. Now that you will be working with an new executable, you will need to create another road map.
+This section will focus on identifying various evasion techniques as well as working around them during the debugging phase. Now that you will be working with an new executable, you will need to create another road map.
 
 ## Control Flow Obfuscation ##
 
-You will notice that the shellcode is broken up into extraneous and unnecessary jumps. This is meant to throw off malware analysis with these anti-disassembly techniques. Malware that has this kind of useless instructions is usually processed with some kind of obfuscation kit. Malware authors rarely write new shellcode and will sell, share, or reuse this code.
+You will notice that the shellcode is broken up into extraneous and unnecessary jumps. This is meant to throw off malware analysts. Malware that has this kind of useless instructions is usually processed with some kind of obfuscation kit (e.g., cryptors). Malware authors rarely write new shellcode and will sell, share, or reuse this code.
 
-Going forward, you should be viewing the disassembly in graph mode. It will be easier to read the control flow. Below is an example of the Flow-chart mode of the useless jumps.
+Going forward, you should be viewing the disassembly in graph mode, as it makes it easier to understand  the control flow. Below is an example of the flow-chart mode of these jumps.
 
 ![alt text](https://securedorg.github.io/RE102/images/Section5_ControlFlowObfuscation.png "Section5_ControlFlowObfuscation")
 
 ## Where to Start? ##
 
-There are no strings for us to investigate and there are no functions parsed by IDA. Tip: The professional version of IDA does a great job at parsing functions. So you need to start exploring each function one by one finding interesting code to look at. If this is too daunting, then manual debugging is your next option. The goal is to make a road map of shellcode by working backwards.
+There are no strings for us to investigate and there are no functions parsed by IDA.. So, you need to start exploring each function one by one finding an interesting piece of code to analyze. This comes with experience. If this seems too daunting, then manual debugging is your next option. The goal is to make a road map of shellcode by working backwards.
 
 ## String Obfuscation ##
 
 The first function call sub_404C1E doesn’t look like something interesting, so move on to the next function call to `sub_402B1C`. This function is a jump-wrapper for the function `sub_4059A3`.
 
-Notice anything strange about the immediate values being placed onto the stack? These are actually strings. By breaking up the string and pushing it onto the stack is a common way to hide strings from malware analysts. Go ahead right-click these numbers and convert it to a string (R).
+Notice anything strange about the immediate values being placed onto the stack? These are actually strings. Breaking up strings and  pushing them onto the stack is a common of hiding strings from malware analysts. Go ahead right-click these numbers and convert it to a string (R).
 
 ![alt text](https://securedorg.github.io/RE102/images/Section5_FunkyStrings.png "Section5_FunkyStrings")
 
@@ -47,7 +47,7 @@ With shellcode or position independent code (PIC), the code needs to load resour
 ## Access to the Process Environment Block (PEB) ##
 
 After the advapi32 string gets loaded onto the stack, enter the function `sub_405421`.  
-This function is accessing the FS segment register `fs:[0x30]` which is the pointing to the Process Environment Block. This is a common shellcode tactic to get handles to loaded windows libraries a.k.a. Modules, specifically the base of kernel32 from the PEB.
+This function is accessing the FS segment register at offset 30. This register is commonly used by OS kernels to access thread-specific memory. This specific offset (i.e., `fs:[0x30]`)  points to the Process Environment Block. This is a common shellcode tactic to get handles to loaded windows libraries a.k.a. Modules, specifically the base address of kernel32 from the PEB.
 
 ```    
 mov     eax, 30h
@@ -60,7 +60,7 @@ mov     eax, [eax+18h] ; get Kernel32
 
 ![alt text](https://securedorg.github.io/RE102/images/Section5_PEB.gif "Section5_PEB")
 
-The second instruction `mov eax, [eax+0Ch]` gets the address of the PEB Loader Data from the [PEB](https://msdn.microsoft.com/en-us/library/windows/desktop/aa813706%28v=vs.85%29.aspx) struct. The [PEB_LDR_DATA](https://msdn.microsoft.com/en-us/library/windows/desktop/aa813708(v=vs.85).aspx) contains the struct for the InMemoryOrderModuleList which is where it gets the pointer for Kernel32. Note: there are many great Shellcode resources available that explain this technique. I just want you to recognize the instruction `fs:[0x30]`.
+The second instruction `mov eax, [eax+0Ch]` gets the address of the PEB Loader Data from the [PEB](https://msdn.microsoft.com/en-us/library/windows/desktop/aa813706%28v=vs.85%29.aspx) struct. The [PEB_LDR_DATA](https://msdn.microsoft.com/en-us/library/windows/desktop/aa813708(v=vs.85).aspx) contains the struct for the InMemoryOrderModuleList which is where it gets the pointer for Kernel32. **Note:** there are many great shellcode resources available that explain this technique. I just want you to recognize the instruction `fs:[0x30]`.
 
 ```
 struct PEB_LDR_DATA {

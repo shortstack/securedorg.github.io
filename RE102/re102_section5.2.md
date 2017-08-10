@@ -9,7 +9,7 @@ title: Setup
 
 ## Anti-Automation ##
 
-Before you continue to `loc_401CCA`, there were some Anti-Automation behaviors that were not discussed from Section 3.1. There calls to GetForegroundWindow, Sleep, then GetForegroundWindow is an anti-automation technique to ensure that there is an actual user changing the state of the foreground window. Typically in automated sandbox testing there is no user interaction unless they accounted to build that into their VM.
+Before you continue to `loc_401CCA`, there were some Anti-Automation behaviors that were not discussed from Section 3.1. The calls to GetForegroundWindow, Sleep, and GetForegroundWindow indicate that the malware is deploying various anti-automation techniques to ensure that there is an actual user changing the state of the foreground window. Typically in automated sandbox testing there is no user interaction unless they accounted to build that into their VM.
 
 ![alt text](https://securedorg.github.io/RE102/images/Section3.1_record_interesting.png "Section3.1_record_interesting")
 
@@ -17,7 +17,7 @@ Before you continue to `loc_401CCA`, there were some Anti-Automation behaviors t
 
 ## Anti-Debugging ##
 
-If you remember from Section 3.1 and 3.2, there were many calls to OutputDebugString. Instead of directly calling for IsDebuggerPresent, calling to OutputDebugString and checking the success or failure is another technique to check if there is a debugger running. It’s a simple tactic to avoid reverse engineering.
+If you remember from Section 3.1 and 3.2, there were many calls to OutputDebugString. Instead of directly calling for IsDebuggerPresent, calling to OutputDebugString and checking the success or failure is another technique to check if there is a debugger running. It’s a simple tactic to make reverse engineering and debugging the malware harder.
 
 ---
 
@@ -25,7 +25,7 @@ If you remember from Section 3.1 and 3.2, there were many calls to OutputDebugSt
 
 There are many resources for a developer to identify if the process is running in a Virtual Machine. Paranoid Fish or pafish is one of the more well-known automated VM identification scripts available. You can view the code here: [https://github.com/a0rtega/pafish](https://github.com/a0rtega/pafish). 
 
-Every VM distro has their own filesystem and registry indicators. Products such as VMware and Vbox often have software installed to help with host to guest sharing. Hardware simulation will contain strings and naming related to the VM product. Some malware will check if it is running inside a VM and change its behavior.
+Every VM distro has their own filesystem and registry indicators. Products such as VMware and VirtualBox often have software installed to help with host to guest sharing. Hardware simulation will contain strings and naming related to the VM product.  Some malware will change their behavior if they find out they are running inside a VM.
 
 In IDA, start back at `loc_401CCA` where you will be able to identify some VM Evasion techniques.
 
@@ -33,7 +33,7 @@ In IDA, start back at `loc_401CCA` where you will be able to identify some VM Ev
 
 ### Checking Hardware Device ###
 
-Earlier in this section, there was an anti-analysis technique of pushing strings to the stack. In function `sub_4029E7` until you are in function `sub_402274`, you can see it’s pushing **H** and **A** in the the screenshot below.
+Earlier in this section, there was an anti-analysis technique of pushing strings to the stack. In function `sub_4029E7` until you are in function `sub_402274`, you can see that it is pushing **H** and **A** in the the screenshot below.
 
 *Click to Enlarge*
 [![alt text](https://securedorg.github.io/RE102/images/Section5.2_hardware.gif "Section5.2_hardware")](https://securedorg.github.io/RE102/images/Section5.2_hardware.gif)
@@ -44,7 +44,7 @@ Go ahead and go through all the strings that are being pushed to the stack. It s
 HARDWARE\DEVICEMAP\Scsi\Scsi Port 0\Scsi Bus 0\Target Id 0\ Logical Unit Id 0\Identifier
 ```
 
-At the very end of the function it jumps to `loc_404777` where it calls `sub_403F73`. This is where the shellcode pushes strings **vmware, qemu,** and **vbox**.  In the debugger, set a breakpoint and run/step to 00406AB6 within function `sub_4037FD`. This is where the call to RegKeyOpenEx happens. 
+At the very end of the function it jumps to `loc_404777` where it calls `sub_403F73`. This is where the shellcode pushes strings **vmware, qemu,** and **vbox**. The malware is checking for registry artifacts to see if it’s running inside a VM. In the debugger, set a breakpoint and run/step into 00406AB6 within function `sub_4037FD`. This is where the call to RegOpenKeyEx happens. 
 
 ![alt text](https://securedorg.github.io/RE102/images/Section5.2_checkregistry.png "Section5.2_checkregistry")
 
@@ -52,11 +52,11 @@ If you follow the stack argument DWORD in the dump you can see the full strings.
 
 ![alt text](https://securedorg.github.io/RE102/images/Section5.2_hardwarestrings.png "Section5.2_hardwarestrings")
 
-Open regedit.exe in Windows and verify that this registry key exists under HKEY_LOCAL_MACHINE. If this key exists RegKeyOpenEx will return 0, if not 2. In the debugger, Step over **F8** this function call. Fortunately this VM was built with an IDE instead of scsi hardware. You can verify this by looking at Virtualbox’s storage settings.
+Open regedit.exe in Windows and verify that this registry key exists under HKEY_LOCAL_MACHINE. If this key exists RegOpenKeyEx will return 0, if not 2. In the debugger, Step over **F8** this function call. Fortunately this VM was built with an IDE instead of scsi hardware. You can verify this by looking at Virtualbox’s storage settings.
 
 ![alt text](https://securedorg.github.io/RE102/images/Section5.2_vboxstoragesettings.png "Section5.2_vboxstoragesettings")
 
-If the VM you are working in does happen to have this registry key, you can always bypass the check. Put a breakpoint at 00404977 so that you won’t miss this next jump. When you are debugging you can modify the **ZF flag** so that `jz loc_404D01` will fail and continue onto the next check.
+If the VM you are working in does happen to have this registry key, you can always bypass the check. You can either get rid of the artifacts themselves or patch the binary. Put a breakpoint at 00404977 so that you won’t miss this next jump. When you are debugging you can modify the **ZF flag** so that `jz loc_404D01` will fail and continue onto the next check.
 
 ![alt text](https://securedorg.github.io/RE102/images/Section5.2_checkbypass.png "Section5.2_checkbypass")
 
@@ -89,7 +89,7 @@ There are 2 places where you can choose to modify the jump:
 
 ![alt text](https://securedorg.github.io/RE102/images/Section5.2_biosjump2.png "Section5.2_biosjump2")
 
-If you modified either of the jump calls above while debugging you should have reached `loc_4010FE` and `sub_4029F1`. Below how you modify the second jump.
+If you modified either of the jump calls above while debugging you should have reached `loc_4010FE` and `sub_4029F1`. Below, you can see how to modify the second jump.
 
 *Click to Enlarge*
 [![alt text](https://securedorg.github.io/RE102/images/Section5.2_ModifyFlags.gif "Section5.2_ModifyFlags")](https://securedorg.github.io/RE102/images/Section5.2_ModifyFlags.gif)
@@ -114,11 +114,11 @@ Keep stepping through function `sub_4029F1` until you get back to `0040110B` whe
 
 ### Check for VM DLLs ###
 
-Keep stepping into `sub_401117` until you reach some interesting immediate values. Go ahead and convert the immediate values at `00405884` into strings. 
+Step into`sub_401117` and keep going through instructions until you reach some interesting immediate values. Go ahead and convert the immediate values at `00405884` into strings. 
 
 ![alt text](https://securedorg.github.io/RE102/images/Section5.2_sandboxiedll.png "Section5.2_sandboxiedll")
 
-This function is checking for sbiedll.dll which is a DLL used by the Sandboxie sandbox. If you are working with Vbox, this DLL will not exist so you won’t need to bypass a jump. Keep working your way through this function because it’s not done with all the checks.
+This function is checking for sbiedll.dll which is a DLL used by the Sandboxie sandbox. If you are working with Vbox, this DLL will not exist so you won’t need to bypass the jump. Keep working your way through this function because it’s not done with all the checks.
 
 ---
 
@@ -162,6 +162,6 @@ After DeviceIOControl is called do not take the jump after at `00405778` or `loc
 
 ![alt text](https://securedorg.github.io/RE102/images/Section5.2_deviceIOcontroljump.png "Section5.2_deviceIOcontroljump")
 
-This jump should land you at `loc_402192` or `00402192`. **Congratulations!** You have made it past several VM evasion techniques. The next Section 6 will go over identifying a packer.
+This jump should land you at `loc_402192` or `00402192`. **Congratulations!** You have made it past several VM evasion techniques. The next section will go over identifying a packer.
 
 [Section 5.1 <- Back](https://securedorg.github.io/RE102/section5.1) | [Next -> Section 6](https://securedorg.github.io/RE102/section6)
