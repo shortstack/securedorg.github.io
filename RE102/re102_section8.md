@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /RE102/section7/
+permalink: /RE102/section8/
 title: Setup
 ---
 [Go Back to Reverse Engineering Malware 102](https://securedorg.github.io/RE102/)
