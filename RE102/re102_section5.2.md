@@ -35,7 +35,8 @@ In IDA, start back at `loc_401CCA` where you will be able to identify some VM Ev
 
 Earlier in this section, there was an anti-analysis technique of pushing strings to the stack. In function `sub_4029E7` until you are in function `sub_402274`, you can see it’s pushing **H** and **A** in the the screenshot below.
 
-![alt text](https://securedorg.github.io/RE102/images/Section5.2_hardware.gif "Section5.2_hardware")
+*Click to Enlarge*
+[![alt text](https://securedorg.github.io/RE102/images/Section5.2_hardware.gif "Section5.2_hardware")](https://securedorg.github.io/RE102/images/Section5.2_hardware.gif)
 
 Go ahead and go through all the strings that are being pushed to the stack. It should com out to:
 
@@ -65,7 +66,8 @@ If the VM you are working in does happen to have this registry key, you can alwa
 
 Continue to step **F7** to function `sub_4021FE` at `00404982`. This function is using the same anti-analysis technique by pushing strings onto the stack. The strings **vbox** and **qemu** are used to check the value in another registry key. Step through the rest of this function to reveal the full string until you reach `004047A7`.
 
-![alt text](https://securedorg.github.io/RE102/images/Section5.2_Hardware2.gif "Section5.2_Hardware2")
+*Click to Enlarge*
+[![alt text](https://securedorg.github.io/RE102/images/Section5.2_Hardware2.gif "Section5.2_Hardware2")](https://securedorg.github.io/RE102/images/Section5.2_Hardware2.gif)
 
 The registry key that you should have recovered from the stack is:
 
@@ -89,7 +91,8 @@ There are 2 places where you can choose to modify the jump:
 
 If you modified either of the jump calls above while debugging you should have reached `loc_4010FE` and `sub_4029F1`. Below how you modify the second jump.
 
-![alt text](https://securedorg.github.io/RE102/images/Section5.2_ModifyFlags.gif "Section5.2_ModifyFlags")
+*Click to Enlarge*
+[![alt text](https://securedorg.github.io/RE102/images/Section5.2_ModifyFlags.gif "Section5.2_ModifyFlags")](https://securedorg.github.io/RE102/images/Section5.2_ModifyFlags.gif)
 
 ---
 
@@ -104,7 +107,8 @@ Just like the previous functions, the strings a pushed to the stack. Look for th
 
 Keep stepping through function `sub_4029F1` until you get back to `0040110B` where `jnz sub_401117` and force the jump to `sub_401117`.
 
-![alt text](https://securedorg.github.io/RE102/images/Section5.2_ModifyJump2.gif "Section5.2_ModifyJump2")
+*Click to Enlarge*
+[![alt text](https://securedorg.github.io/RE102/images/Section5.2_ModifyJump2.gif "Section5.2_ModifyJump2")](https://securedorg.github.io/RE102/images/Section5.2_ModifyJump2.gif)
 
 ---
 
@@ -122,11 +126,13 @@ This function is checking for sbiedll.dll which is a DLL used by the Sandboxie s
 
 In IDA, look into `sub_406FCC` at `0040218D` after the sandboxie DLL check. Based on the logic below you might not need to step into this function. You can always force the jump to `loc_402192` and skip over `sub_406FCC`. For the purposes of recognizing VM evasion, you should step through this function.
 
+
 ![alt text](https://securedorg.github.io/RE102/images/Section5.2_PhyicalDriveCheck.png "Section5.2_PhyicalDriveCheck")
 
 Put a breakpoint at `00404403` where the instruction `call dword ptr ds:[esi+98]` because this is the next API call. It tries to call CreateFile the PhysicalDrive0 in order to read it. 
 
-![alt text](https://securedorg.github.io/RE102/images/Section5.2_PhysicalDriveapicall.png "Section5.2_PhysicalDriveapicall")
+*Click to Enlarge*
+[![alt text](https://securedorg.github.io/RE102/images/Section5.2_PhysicalDriveapicall.png "Section5.2_PhysicalDriveapicall")](https://securedorg.github.io/RE102/images/Section5.2_PhysicalDriveapicall.png)
 
 Because the above check failed, it will perform another device check. Keep stepping through the program until you reach 00406266 where the second API call is `call dword ptr ds:[esi+94]`. It is calling DeviceIoControl where it will check the \\.\PhysicalDrive0 for the following strings:
 
@@ -158,4 +164,4 @@ After DeviceIOControl is called do not take the jump after at `00405778` or `loc
 
 This jump should land you at `loc_402192` or `00402192`. **Congratulations!** You have made it past several VM evasion techniques. The next Section 6 will go over identifying a packer.
 
-[Section 5.1 <- Back](https://securedorg.github.io/RE102/sectio5.1) | [Next -> Section 6](https://securedorg.github.io/RE102/section6)
+[Section 5.1 <- Back](https://securedorg.github.io/RE102/section5.1) | [Next -> Section 6](https://securedorg.github.io/RE102/section6)
