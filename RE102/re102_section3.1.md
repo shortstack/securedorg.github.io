@@ -20,7 +20,7 @@ The previous page talked about the delphi structure. Note: IDAPro provides bette
 
 ## Junk Data ##
 
-In the information gathering stage, the strings revealed that there was some junk data being referenced. Let’s actually look how those strings are being referenced in the disassembler. Scroll down until you see some junk strings in the DATA section in the IDA Strings panel.  Each Portable Executable (PE) section has its own purpose. The DATA (.data) section is typically used for hardcoded global and static variables that were initialized at compile time [1]. This section is more commonly used for storing string references. To see a string referenced in the data section that looks like junk data might be an indicator of foul play.
+In the information gathering stage, the strings revealed that there was some junk data being referenced. Let’s actually look how those strings are being referenced in the disassembler. Scroll down until you see some junk strings in the DATA section in the IDA Strings panel.  Each Portable Executable (PE) section has its own purpose. The DATA (.data) section is typically used for hardcoded global and static variables that were initialized at compile time [[1]](https://msdn.microsoft.com/en-us/library/ms809762.aspx?f=255&MSPPError=-2147217396). This section is more commonly used for storing string references. To see a string referenced in the data section that looks like junk data might be an indicator of foul play.
 
 ![alt text](https://securedorg.github.io/RE102/images/Section3.1_PEstructure.png "Section3.1_PEstructure")[1](https://msdn.microsoft.com/en-us/library/ms809762.aspx?f=255&MSPPError=-2147217396)
 
