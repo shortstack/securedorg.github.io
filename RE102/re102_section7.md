@@ -13,9 +13,9 @@ This concludes the workshop but you can apply the same unpacker to the resources
 1. UPX packed
 2. Has 3 resources using the same packer
 
-As an exercise I recommend going through them on your own.
+As an exercise, I recommend going through them on your own.
 
-Most packers are bought and sold on underground forums or traded amongst malware authors. The flowing sample called [Rombertik](https://en.wikipedia.org/wiki/Rombertik) uses this same packer. For fun you can check it out:
+Most packers are bought and sold on underground forums or traded amongst malware authors. The following sample called [Rombertik](https://en.wikipedia.org/wiki/Rombertik) uses this same packer. For fun you can check it out:
 
 ```
 77bacb44132eba894ff4cb9c8aa50c3e9c6a26a08f93168f65c48571fdf48e2a
