@@ -32,7 +32,7 @@ Sha256 Malware inside
 
 ---
 
-# WARNING - DO NOT UNZIP OR RUN THIS OUTSIDE OF THE VM #
+# WARNING - DO NOT UNZIP OR RUN THIS OUTSIDE OF A NETWORK ISOLATED VM #
 
 1. Run the Victim VM and copy over the malware.zip into the VM.
 2. Unzip **Warning - DO NOT UNZIP THIS OUTSIDE OF THE VM**
