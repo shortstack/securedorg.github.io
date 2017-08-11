@@ -44,7 +44,7 @@ Go ahead and go through all the strings that are being pushed to the stack. It s
 HARDWARE\DEVICEMAP\Scsi\Scsi Port 0\Scsi Bus 0\Target Id 0\ Logical Unit Id 0\Identifier
 ```
 
-At the very end of the function it jumps to `loc_404777` where it calls `sub_403F73`. This is where the shellcode pushes strings **vmware, qemu,** and **vbox**. The malware is checking for registry artifacts to see if it’s running inside a VM. In the debugger, set a breakpoint and run/step into 00406AB6 within function `sub_4037FD`. This is where the call to RegOpenKeyEx happens. 
+At the very end of the function it jumps to `loc_404777` where it calls `sub_403F73`. This is where the shellcode pushes strings **vmware, qemu,** and **vbox**. The malware is checking for registry artifacts to see if it’s running inside a VM. In the debugger, set a breakpoint and run/step into `00406AB6` within function `sub_4037FD`. This is where the call to RegOpenKeyEx happens. 
 
 ![alt text](https://securedorg.github.io/RE102/images/Section5.2_checkregistry.png "Section5.2_checkregistry")
 
@@ -57,7 +57,7 @@ Open regedit.exe in Windows and verify that this registry key exists under HKEY_
 
 ![alt text](https://securedorg.github.io/RE102/images/Section5.2_vboxstoragesettings.png "Section5.2_vboxstoragesettings")
 
-If the VM you are working in does happen to have this registry key, you can always bypass the check. You can either get rid of the artifacts themselves or patch the binary. Put a breakpoint at 00404977 so that you won’t miss this next jump. When you are debugging you can modify the **ZF flag** so that `jz loc_404D01` will fail and continue onto the next check.
+If the VM you are working in does happen to have this registry key, you can always bypass the check. You can either get rid of the artifacts themselves or patch the binary. Put a breakpoint at `00404977` so that you won’t miss this next jump. When you are debugging you can modify the **ZF flag** so that `jz loc_404D01` will fail and continue onto the next check.
 
 ![alt text](https://securedorg.github.io/RE102/images/Section5.2_checkbypass.png "Section5.2_checkbypass")
 
