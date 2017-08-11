@@ -60,7 +60,7 @@ Cryptographic algorithms are often grouped into two major categories: symmetric 
 
 ![alt text](https://securedorg.github.io/RE102/images/Section4_cipher.png "Section4_cipher")
 
-For every subkey K in this algorithm, it has to loop through each K to XOR and Swap. In the disassembly you will be able to see this looping, incrementing, and swapping action going on. Now let’s look at sub_45B5AC.
+For every subkey K in this algorithm, it has to loop through each K to XOR and Swap. In the disassembly you will be able to see this looping, incrementing, and swapping action going on. Now let’s look at `sub_45B5AC`.
 
 ![alt text](https://securedorg.github.io/RE102/images/Section4_looping.png "Section4_looping")
 
