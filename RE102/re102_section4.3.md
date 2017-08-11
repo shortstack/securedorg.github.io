@@ -25,10 +25,10 @@ Keep in mind that you don’t need to do this step, but converting it to an exe 
 There are many tools and scripts available that help you convert shellcode into an exe like [shellcode2exe.py](https://github.com/securedorg/shellcode_tools/blob/master/shellcode2exe.py). However I have found that Hexacon provided a nice easy [tutorial for converting shellcode into an executable](http://www.hexacorn.com/blog/2015/12/10/converting-shellcode-to-portable-executable-32-and-64-bit/). This section will be using this YASM and GoLink to create the executable while using CFF explorer to edit the binary header. 
 
 1. Download Yasm
-[http://www.tortall.net/projects/yasm/releases/yasm-1.3.0-win32.exe](http://www.tortall.net/projects/yasm/releases/yasm-1.3.0-win32.exe)
+[yasm-1.3.0-win32.exe](http://www.tortall.net/projects/yasm/releases/yasm-1.3.0-win32.exe)
 2. Extract **yasm-1.3.0-win32.exe** and rename it to **yasm.exe**
 3. Download GoLink linker
-[http://www.godevtool.com/Golink.zip](http://www.godevtool.com/Golink.zip)
+[Golink.zip](http://www.godevtool.com/Golink.zip)
 4. Extract golink.exe
 5. Create a **decrypted_shellcode.asm** file with the following instructions
 ```
@@ -45,7 +45,7 @@ yasm.exe -f win32 -o decrypted_shellcode.obj decrypted_shellcode.asm
 ```
 golink /ni /entry Start decrypted_shellcode.obj
 ```
-8. Open shellcode.exe with CFF explorer and open the NT Headers->Optional Headers->AddressOfEntryPoint. Add the current value to 0x4B27 which was the offset of where the malware was going to return to in function `sub_45B794`. AddressOfEntryPoint should be `000052B7`. This will ensure that IDA knows where to start the disassembly.
+8. Open shellcode.exe with CFF explorer and open the **NT Headers->Optional Headers->AddressOfEntryPoint**. Add the current value to 0x4B27 which was the offset of where the malware was going to return to in function `sub_45B794`. AddressOfEntryPoint should be `000052B7`. This will ensure that IDA knows where to start the disassembly.
 
 Finally, open the decrypted_shellcode.exe into IDA for Section 5.
 
