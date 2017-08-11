@@ -35,6 +35,8 @@ Please use the utility [7zip](http://www.7-zip.org/download.html). Unzip the fil
 * Gateway: 192.168.0.1
 * Zip size 3.7G, Final size required 10G
 
+**Note:** If the VM is rebooting on you, open a command prompt with admin privileges and run "slmgr /rearm", then reboot. It should reset the VM's trial version.
+
 [Sniffer VM](https://drive.google.com/open?id=0B_0DJl2kuzoNT3IwNElLV3VRdms)
 
 * MD5sum: f9c9214475560ab0b019654560e9d3b8 **Updated 6/30/2017**
