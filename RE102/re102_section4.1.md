@@ -25,7 +25,7 @@ Arg_8 = junk2
 Arg_C = 0x1F 
 ```
 
-At loc_45B5C9, the registers that saved the key and sizes are moved into base pointer offsets:
+At `loc_45B5C9`, the registers that saved the key and sizes are moved into base pointer offsets:
 
 ```
 45b5cb:    mov [ebp-0xc], ecx ; Key
@@ -106,7 +106,7 @@ The second call to `sub_405268`:
 
 ![alt text](https://securedorg.github.io/RE102/images/Section4.1_loop3.png "Section4.1_loop3")
 
-When you enter function sub_405268, you will notice that there are a bunch of arithmetic instructions. This function is actually a modulo function. Tip: the Pro version of IDA marks function sub_405268 as the Delphi library function System::llmod.
+When you enter function `sub_405268`, you will notice that there are a bunch of arithmetic instructions. This function is actually a modulo function. Tip: the Pro version of IDA marks function `sub_405268` as the Delphi library function System::llmod.
 
 Rename function `sub_405268` to “mod”.
 
