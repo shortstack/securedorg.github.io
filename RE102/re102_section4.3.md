@@ -9,7 +9,7 @@ title: Setup
 
 Now you have the decrypted shellcode. This section will go over converting the shellcode into an executable so that you can view the disassembly in IDA. 
 
-Keep in mind that you don’t need to do this step, but converting it to an exe will help in debugging and viewing Evasion Techniques in Section 5. You can open the decrypted_shellcode.bin in IDA and notice that the disassembly is not parsing functions properly. The malware author has inserted extraneous assembly instructions to through off malware analysis. 0x78 means assembly instruction `js` or `Jump short if sign (SF=1)`.
+Keep in mind that you don’t need to do this step, but converting it into an executable will help you in debugging and understanding the deployed VM evasion techniques which are heavily discussed in Section 5. You can open the decrypted_shellcode.bin in IDA and notice that the disassembly is not parsing functions properly. The malware author has inserted extraneous assembly instructions to through off malware analysis. 0x78 means assembly instruction `js` or `Jump short if sign (SF=1)`.
 
 ```
 00000000: 7878 7878 7878 7878 7878 7878 7878 7878  xxxxxxxxxxxxxxxx

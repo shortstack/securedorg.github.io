@@ -9,7 +9,7 @@ title: Setup
 
 ## The Return Address ##
 
-Before you begin to decrypt the Junk2 data, let’s first jump back to the function that calls the decryption function in `sub_45B794`. Remember that dword that you saved earlier in the road map? The value 0x4B27 was added to the address of the newly allocated memort from VirtualAlloc. This value Offset+0x4B27 is being saved in register `esi` and then **pushed** onto the stack before the function returns. Typically functions will **pop** the `ebp` on the stack to return to the stack frame of the calling function. Here the eip will return to Offset+42B7 which is where our decrypted junk2 data will be. 
+Before we begin to decrypt the Junk2 data, you need to know where our decrypted junk2 will be located at. Let’s go back to the subroutine that calls the decryption function in `sub_45B794`. Remember that DWORD that you saved earlier in the road map? The value 0x4B27 was added to the address of the newly allocated memory (i.e., the return value of VirtualAlloc).. This value Offset+0x4B27 is being saved in register `esi` and then **pushed** onto the stack before the function returns. Typically functions will **pop** the `ebp` on the stack to restore  the previous stack frame of the calling function. Here the eip will return to Offset+42B7 which is where our decrypted junk2 data will be. 
 
 You should recognize that the malware plans to execute the encrypted Junk2 data here. Now you know the purpose of the Junk2 data which is Position Independent Code (PIC) more typically known as Shellcode. 
 
@@ -19,21 +19,21 @@ You should recognize that the malware plans to execute the encrypted Junk2 data 
 
 ## Export the Key and Shellcode ##
 
-Now you need to export the Key and Shellcode bytes from the malware. You can use the HxD hex editor to extract this data.
+In order to extract the shellcode and the key from the malware you will use the HxD hex editor. 
 
-In IDA, if you select the shellcode aka `unk_45CCD4` its offset is 0x5BED4. You know that the size of this data is 0x65E4. Open the mbam.exe with HxD and choose **Edit->Select Block**. Plug in the offset and length.
+In IDA, select the shellcode (labeled as `unk_45CCD4`) with starting offset of 0x5BED4. From previous sections, we know that the size of this data is 0x65E4. Open the mbam.exe with HxD and choose **Edit->Select Block**. Plug in the offset and length.
 
 ![alt text](https://securedorg.github.io/RE102/images/Section4.2_HxDextract.png "Section4.2_HxDextract")
 
 Copy and save these bytes into a new binary file in HxD hex editor and name it **shellcode.bin**.
 
-Do the same for the Key offset and name it as **key.bin**.
+Again, in addition to extracting the shellcode, you need to extract the key as well. So, do the same for the key offset and name it as **key.bin**.
 
 ---
 
 ## RC4 Decrypt Script ##
 
-Let’s code the RC4 Stream Algorithm in python based on the pseudo code:
+Let’s code the RC4 key scheduling  and pseudo-random generation algorithm algorithm in Python based on the pseudo code given below:
 
 ### Key Schedule Pseudo Code [1](https://en.wikipedia.org/wiki/RC4#Key-scheduling_algorithm_.28KSA.29) ###
 
@@ -112,7 +112,7 @@ with open(sys.argv[1], 'rb') as key_file, open(sys.argv[2], 'rb') as encrypted, 
 
 ![alt text](https://securedorg.github.io/RE102/images/Section4.2_error.gif "Section4.2_error")
 
-If you run the script above you will get some terribly decrypted data. Why? Because there is an error in the RC4 algorithm implemented by the malware author. Between Loop 3 and Loop 4 the register that stores the j variable was not reseted after the key schedule is made.
+If you run the script above against the extracted data, the decrypted data will not make a lot of sense.This is mainly because there is an error in the RC4 algorithm implemented by the malware author. If you pay attention to disassembled code in IDA, you will see between Loop 3 and Loop 4 the register that stores the j variable was never reseted after the key schedule is made.
 
 ## Run the Correct Decrypt Algorithm ##
 
@@ -125,6 +125,7 @@ In the Victim VM, open up the command prompt and run the following line. Replace
  c:\Python27\python.exe <location>\decrypt_shellcode.py  <location>\key.bin  <location>\shellcode.bin
 ```
 
-Now that you have the decrypted shellcode let’s turn it into an exe so you can analyze it in IDA. The next page will provide these instructions.
+Now that you have the decrypted shellcode let’s turn it into an exe so you can analyze it in IDA. The next subsection will provide these instructions.
+
 
 [Section 4.1 <- Back](https://securedorg.github.io/RE102/section4.1) | [Next -> Section 4.3](https://securedorg.github.io/RE102/section4.3)
