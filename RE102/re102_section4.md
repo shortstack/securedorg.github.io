@@ -30,6 +30,21 @@ Let’s take a look at the arguments for `sub_45B5AC`. Remember in section 1.3 o
 
 ![alt text](https://securedorg.github.io/RE102/images/Section4_functionargs.png "Section4_functionargs")
 
+### Delphi calling convention ###
+
+Remember that this is delphi so the calling convention uses registers eax, ecx, edx as first 3 arguments. The rest of the arguments are pushed on stack in reverse order.
+
+```
+push    3
+push    4
+mov     ecx, 2
+mov     edx, 1
+xor     eax, eax
+call    function
+xor     eax,eax
+retn    10
+```
+
 Based on previous sections, it should be already obvious to you what these values mean. You know that the malware recently called VirtualAlloc, and moved **junk 2** of size 0x65E4 into the new memory stored it in `[ebp+var_BEEB]`. If you click on `unk_45CCB4`, you will see that this data is only 0x20 (32 dec) bytes. So, the pseudo code for this function would be:
 
 ```
