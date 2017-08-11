@@ -25,7 +25,7 @@ There are no strings for us to investigate and there are no functions parsed by 
 
 ## String Obfuscation ##
 
-The first function call sub_404C1E doesn’t look like something interesting, so move on to the next function call to `sub_402B1C`. This function is a jump-wrapper for the function `sub_4059A3`.
+The first function call `sub_404C1E` doesn’t look like something interesting, so move on to the next function call to `sub_402B1C`. This function is a jump-wrapper for the function `sub_4059A3`.
 
 Notice anything strange about the immediate values being placed onto the stack? These are actually strings. Breaking up strings and  pushing them onto the stack is a common of hiding strings from malware analysts. Go ahead right-click these numbers and convert it to a string (R).
 
