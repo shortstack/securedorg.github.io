@@ -13,7 +13,7 @@ This section will focus on identifying a custom packing routine. Believe it or n
 
 ## The Bat and Vbs Scripts ##
 
-Before you actually get to the unpacking routine, navigate your way to `loc_4050A0`. There is a function call you might miss. When you are debugging the jump instruction `jz loc_40196B` at 004050A0 will jump over `sub_405463`.  If you want to debug this function just modify the jump here.
+Before you actually get to the unpacking routine, navigate your way to `loc_4050A0`. There is a function call you might miss. When you are debugging the jump instruction `jz loc_40196B` at `004050A0` will jump over `sub_405463`.  If you want to debug this function just modify the jump here.
 
 ![alt text](https://securedorg.github.io/RE102/images/Section6_script.png "Section6_script")
 
@@ -43,12 +43,12 @@ WshShell.Run chr(34) & "C:\\Users\\victim\\AppData\\Roaming\\<filename>.bat" & C
 Set WshShell = Nothing
 ```
 To see the bat and vbs script get created, force these jump locations to not take the jump branch! This can be done like before, by simply changing the zero flag.
-* 00403089
-* 00404652
-* 004048A7
-* 004048B0
-* 00403349
-* 0040507A
+* `00403089`
+* `00404652`
+* `004048A7`
+* `004048B0`
+* `00403349`
+* `0040507A`
 
 ## The Unpacker ##
 
