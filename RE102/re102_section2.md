@@ -11,7 +11,7 @@ title: Setup
 
 You want to find as much information as you can before you begin the static and dynamic analysis.
 
-As mentioned in RE101 please collect the information in this checklist. You can do this list in any order.
+As mentioned in [RE101 Section 4](https://securedorg.github.io/RE101/section4/) please collect the information in this checklist. You can do this list in any order.
 
 * File Context and Delivery
 * File Information & Header Analysis
