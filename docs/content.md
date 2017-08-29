@@ -72,3 +72,9 @@ title: Content
 **[TARGETED ATTACK TREND ALERT: PLUGX THE OLD DOG WITH A NEW TRICK](https://www.fireeye.com/blog/threat-research/2013/05/targeted-attack-trend-alert-plugx-the-old-dog-with-a-new-trick.html)**
 
 *FireEye*
+
+## Education ##
+
+**MS in Information Systems Engineering**, *Johns Hopkins University*
+
+**BA in Communication Design, Computer Science**, *Texas State University*
