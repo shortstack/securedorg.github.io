@@ -43,7 +43,7 @@ title: Content
 
 # Work Blogs
 
-**[WCry/WanaCry Ransomware Technical Analysis](https://www.endgame.com/blog/technical-blog/wcrywanacry-ransomware-technical-analysis)
+**[WCry/WanaCry Ransomware Technical Analysis](https://www.endgame.com/blog/technical-blog/wcrywanacry-ransomware-technical-analysis)**
 
 *Endgame*
 
