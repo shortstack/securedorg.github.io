@@ -27,6 +27,8 @@ Vehicle Embedded System Imaging & Extraction, Examination and Exploitation | DoD
 
 # Work Blogs
 
+* [WCry/WanaCry Ransomware Technical Analysis](https://www.endgame.com/blog/technical-blog/wcrywanacry-ransomware-technical-analysis) | Endgame
+
 * [Instegogram: Leveraging Instagram for C2 via Image Steganography](https://www.endgame.com/blog/instegogram-leveraging-instagram-c2-image-steganography) | Endgame
 
 * [Your Package Has Been Successfully Encrypted: TeslaCrypt 4.1A and the Malware Attack Chain](https://www.endgame.com/blog/your-package-has-been-successfully-encrypted-teslacrypt-41a-and-malware-attack-chain) | Endgame
