@@ -74,10 +74,10 @@ So let’s create the pseudo code for this loop:
 
 ```
 int ebx = 0;
-int length = 265 // 0x100
+int length = 256 // 0x100
 While (ebx < 256)
 {
-    push(i)
+    push(ebx)
     ebx++
 }
 ```
