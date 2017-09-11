@@ -26,27 +26,27 @@ Please use the utility [7zip](http://www.7-zip.org/download.html). Unzip the fil
 
 [Victim VM](https://drive.google.com/open?id=0B_0DJl2kuzoNZkpveEtiMWJKWDA)
 
-* MD5sum: 7d4f2ff359cd74eec3cae7b16a916939 **Updated 6/30/2017**
+* MD5sum: b84f0cdb7acc00aeb9effcee84b85f65 **Updated 9/11/2017**
 * OS: Windows 7 Service Pack 1
 * Architecture: Intel 32bit
 * Username: victim
 * Password: re1012017
 * IP Address: 192.168.0.2
 * Gateway: 192.168.0.1
-* Zip size 3.7G, Final size required 10G
+* Zip size 3.96G, Final size required 10.1G
 
 **Note:** If the VM is rebooting on you, open a command prompt with admin privileges and run "slmgr /rearm", then reboot. It should reset the VM's trial version.
 
 [Sniffer VM](https://drive.google.com/open?id=0B_0DJl2kuzoNT3IwNElLV3VRdms)
 
-* MD5sum: f9c9214475560ab0b019654560e9d3b8 **Updated 6/30/2017**
+* MD5sum: fc69591b0ce1cdc84fc5c63d02d30d5f **Updated 9/11/2017**
 * OS: Ubuntu 16.04.2 LTS Desktop
 * Architecture: Intel 64bit
 * Username: sniffer
 * password re1012017
 * IP Address: 192.168.0.1
 * Gateway: 192.168.0.1
-* Zip size 1.9G, Final size required 6G
+* Zip size 2.08G, Final size required 6G
 
 ---
 
