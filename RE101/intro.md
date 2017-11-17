@@ -7,7 +7,7 @@ title: Intro
 
 # Introduction #
 
-![alt text](https://securedorg.github.io/images/cube.gif "Cube")
+![alt text](https://securedorg.github.io/RE101/images/cube.gif "Cube")
 
 # Reverse Engineering #
 
@@ -27,7 +27,7 @@ title: Intro
 
 * Constantly learn new things
 
-![alt text](https://securedorg.github.io/images/bikeloop.gif "Bike")
+![alt text](https://securedorg.github.io/RE101/images/bikeloop.gif "Bike")
 
 ## Game Plan ##
 

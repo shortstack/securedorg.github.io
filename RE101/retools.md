@@ -69,7 +69,7 @@ title: RE Tools
 
 ### Disassembler: IdaFree
 
-![alt text](https://securedorg.github.io/images/IdaFree.gif "IdaFree Layout")
+![alt text](https://securedorg.github.io/RE101/images/IdaFree.gif "IdaFree Layout")
 
 * **Visual Modes**
   * **Graph Mode** - control flow diagram
@@ -88,7 +88,7 @@ title: RE Tools
 
 ### Debugger: x64dbg
 
-![alt text](https://securedorg.github.io/images/x64dbg.gif "x64dbg Layout")
+![alt text](https://securedorg.github.io/RE101/images/x64dbg.gif "x64dbg Layout")
 
 **Common Commands**
 
@@ -103,7 +103,7 @@ title: RE Tools
 
 ### Keyboard Layout for IdaFree and x64dbg
 
-![alt text](https://securedorg.github.io/images/keyboarddbg.gif "Keyboard Layout")
+![alt text](https://securedorg.github.io/RE101/images/keyboarddbg.gif "Keyboard Layout")
 
 ---
 
@@ -113,7 +113,7 @@ title: RE Tools
 * Explores Resources
 * Unpacks UPX
 
-![alt text](https://securedorg.github.io/images/CFFexplorer.gif "CFF Explorer")
+![alt text](https://securedorg.github.io/RE101/images/CFFexplorer.gif "CFF Explorer")
 
 ## Information Gathering: Sysinternals Suite
 
@@ -121,7 +121,7 @@ title: RE Tools
 * **ProcMon** - Monitor processes/thread, files system, network, and registry activity on the system
 * **ProcExp** - Monitor processes running on the system
 
-![alt text](https://securedorg.github.io/images/procmon.png "ProcExp")
+![alt text](https://securedorg.github.io/RE101/images/procmon.png "ProcExp")
 
 
 [Section 2.1 <- Back](https://securedorg.github.io/RE101/section2.1) | [Next -> Section 4](https://securedorg.github.io/RE101/section4)

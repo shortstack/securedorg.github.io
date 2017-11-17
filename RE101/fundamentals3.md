@@ -47,16 +47,16 @@ Example below is moving value at 0xaaaaaaaa into ecx.
 | --- | --- |
 | `mov ecx,[0xaaaaaaaa];` | `8B 0D AA AA AA AA` |
 
-Use the search page below or open the [Search Instructions](https://securedorg.github.io/x86.html) page to search for functions discussed above
+Use the search page below or open the [Search Instructions](https://securedorg.github.io/RE101/x86.html) page to search for functions discussed above
 
-<iframe src="https://securedorg.github.io/x86.html" width="640" height="480" frameborder="0" style="display:block; margin: 0 auto;"></iframe>
+<iframe src="https://securedorg.github.io/RE101/x86.html" width="640" height="480" frameborder="0" style="display:block; margin: 0 auto;"></iframe>
 
 ---
 
 ## Registers ###
 
 The image below is what registers will look like in a debugger.
-![alt text](https://securedorg.github.io/images/Registers.png "Registers")
+![alt text](https://securedorg.github.io/RE101/images/Registers.png "Registers")
 
 #### General-Purpose Registers [[1]][1]
 
@@ -114,19 +114,19 @@ The **EIP** register contains the address of the next instruction to be executed
 ## Hello World ##
 
 *Click Image to Enlarge*
-[![alt text](https://securedorg.github.io/images/helloworld.gif "Hello World")](https://securedorg.github.io/images/helloworld.gif)
+[![alt text](https://securedorg.github.io/RE101/images/helloworld.gif "Hello World")](https://securedorg.github.io/RE101/images/helloworld.gif)
 
 ## Calling a Function ##
 
 ### Arguments on the Stack ###
 
 *Click Image to Enlarge*
-[![alt text](https://securedorg.github.io/images/FunctionCall.gif "Function Arguments")](https://securedorg.github.io/images/FunctionCall.gif)
+[![alt text](https://securedorg.github.io/RE101/images/FunctionCall.gif "Function Arguments")](https://securedorg.github.io/RE101/images/FunctionCall.gif)
 
 ### Local Variables on the Stack ###
 
 *Click Image to Enlarge*
-[![alt text](https://securedorg.github.io/images/FunctionCall2.gif "Function Locals")](https://securedorg.github.io/images/FunctionCall2.gif)
+[![alt text](https://securedorg.github.io/RE101/images/FunctionCall2.gif "Function Locals")](https://securedorg.github.io/RE101/images/FunctionCall2.gif)
 
 [1]: https://en.wikibooks.org/wiki/X86_Assembly/X86_Architecture
 
