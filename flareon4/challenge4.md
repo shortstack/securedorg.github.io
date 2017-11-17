@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /challenge4/
+permalink: /flareon4/challenge4/
 title: Challenge 4 notepad.exe
 ---
 

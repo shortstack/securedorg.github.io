@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /challenge10/
+permalink: /flareon4/challenge10/
 title: Challenge 10 shell.php
 ---
 

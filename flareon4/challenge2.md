@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /challenge2/
+permalink: /flareon4/challenge2/
 title: Challenge 2 IgniteMe.exe
 ---
 

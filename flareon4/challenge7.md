@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /challenge7/
+permalink: /flareon4/challenge7/
 title: Challenge 7 zsud.exe
 ---
 

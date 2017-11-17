@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /challenge11/
+permalink: /flareon4/challenge11/
 title: Challenge 11 covfefe.exe
 ---
 

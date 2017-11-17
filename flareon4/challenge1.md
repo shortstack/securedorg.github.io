@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /challenge1/
+permalink: /flareon4/challenge1/
 title: Challenge 1 login.html
 ---
 

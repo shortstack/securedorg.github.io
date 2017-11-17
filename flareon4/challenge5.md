@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /challenge5/
+permalink: /flareon4/challenge5/
 title: Challenge 5 pewpewboat.exe
 ---
 

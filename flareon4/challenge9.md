@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /challenge9/
+permalink: /flareon4/challenge9/
 title: Challenge 9 remorse.ino.hex
 ---
 

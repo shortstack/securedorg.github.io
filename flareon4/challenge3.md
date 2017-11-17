@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /challenge3/
+permalink: /flareon4/challenge3/
 title: Challenge 3 greek_to_me.exe
 ---
 

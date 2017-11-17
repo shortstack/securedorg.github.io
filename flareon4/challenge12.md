@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /challenge12/
+permalink: /flareon4/challenge12/
 title: Challenge 12 missing
 ---
 

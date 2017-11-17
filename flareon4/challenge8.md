@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /challenge8/
+permalink: /flareon4/challenge8/
 title: Challenge 8 flair.apk
 ---
 

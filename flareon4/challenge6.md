@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /challenge6/
+permalink: /flareon4/challenge6/
 title: Challenge 6 payload.dll
 ---
 
