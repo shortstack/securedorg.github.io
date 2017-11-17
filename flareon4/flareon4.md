@@ -13,29 +13,29 @@ I wanted to make sure I participated this year since I would be coaching my inte
 
 ## Challenges ##
 
-### Challenge 1) [login.html](#) ### 
+### Challenge 1) [login.html](https://securedorg.github.io/flareon4/challenge1) ### 
 
-### Challenge 2) [IgniteMe.exe](#) ### 
+### Challenge 2) [IgniteMe.exe](https://securedorg.github.io/flareon4/challenge2) ### 
 
-### Challenge 3) [greek_to_me.exe](#) ### 
+### Challenge 3) [greek_to_me.exe](https://securedorg.github.io/flareon4/challenge3) ### 
 
-### Challenge 4) [notepad.exe](#) ### 
+### Challenge 4) [notepad.exe](https://securedorg.github.io/flareon4/challenge4) ### 
 
-### Challenge 5) [pewpewboat.exe](#) ### 
+### Challenge 5) [pewpewboat.exe](https://securedorg.github.io/flareon4/challenge5) ### 
 
-### Challenge 6) [payload.dll](#) ### 
+### Challenge 6) [payload.dll](https://securedorg.github.io/flareon4/challenge6) ### 
 
-### Challenge 7) [zsud.exe](#) ### 
+### Challenge 7) [zsud.exe](https://securedorg.github.io/flareon4/challenge7) ### 
 
-### Challenge 8) [flair.apk](#) ### 
+### Challenge 8) [flair.apk](https://securedorg.github.io/flareon4/challenge8) ### 
 
-### Challenge 9) [remorse.ino.hex](#) ### 
+### Challenge 9) [remorse.ino.hex](https://securedorg.github.io/flareon4/challenge9) ### 
 
-### Challenge 10) [shell.php](#) ### 
+### Challenge 10) [shell.php](https://securedorg.github.io/flareon4/challenge10) ### 
 
-### Challenge 11) [covfefe.exe](#) ### 
+### Challenge 11) [covfefe.exe](https://securedorg.github.io/flareon4/challenge11) ### 
 
-### Challenge 12) [missing](#) ### 
+### Challenge 12) [missing](https://securedorg.github.io/flareon4/challenge12) ### 
 
 
 
