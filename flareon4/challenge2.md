@@ -77,7 +77,7 @@ shr ax,1
 pop ebp
 ```
 
-## Find where if the input is validated ##
+### Find where is the input validated ###
 
 In function 401050, after the input is xored with `0x04` it's checked against a string stored at offset `403000`
 Because xoring is symetric, you can easily xor the hardcoded answer with the same key.
