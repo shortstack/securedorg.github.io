@@ -11,6 +11,8 @@ Around September, FireEye hosts their annual [Flare-On](http://www.flare-on.com/
 
 I wanted to make sure I participated this year since I would be coaching my intern at the same time. Between work and conference travel, I managed to finish on time.
 
+You can download the binaries [HERE](https://github.com/securedorg/securedorg.github.io/blob/master/flareon4/binaries.zip)
+
 ## Challenges ##
 
 ### Challenge 1) [login.html](https://securedorg.github.io/flareon4/challenge1) ### 

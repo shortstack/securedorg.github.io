@@ -100,6 +100,6 @@ for i in reversed_bytes:
 print answer[::-1]
 ```
 
-[Challenge 1 <- Back](https://securedorg.github.io/flareon4/challenge) | [Next -> Challeng 3](https://securedorg.github.io/flareon4/challenge3)
+[Challenge 1 <- Back](https://securedorg.github.io/flareon4/challenge1) | [Next -> Challeng 3](https://securedorg.github.io/flareon4/challenge3)
 
 
