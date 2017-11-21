@@ -27,6 +27,15 @@ The hint here is the value tested against 0xFB5E. There is a function that proce
 The first loop preps the answer array.
 ![alt text](https://securedorg.github.io/flareon4/images/ch3_loop.png "first loop")
 
+In python it looks like this:
+```
+answer = stored_bytes[:]
+for i in range(size):
+    x = char ^ answer[i]
+    x = (x + 0x22) & 0xff
+    answer[i] = x
+```
+
 ## Main algorithm ##
 The 4011E6 will then take the answer array in reverse and do some bit shifting while chaining addition based on 2 bytes because of the usage of ax and cx. This value will eventually equal to 0xFB5E. 
 ![alt text](https://securedorg.github.io/flareon4/images/ch3_aglo.png "algorithm")
