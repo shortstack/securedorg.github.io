@@ -44,18 +44,22 @@ Hardcoded encrypted answer:
 
 ![alt text](https://securedorg.github.io/flareon4/images/ch4_answer.png "answer")
 
+Here is the hex for the screenshot above:
+
 ```
 37 E7 D8 BE 7A 53 30 25 BB 38 57 26 97 26 6F 50 F4 75 67 BF B0 EF A5 7A 65 AE AB 66 73 A0 A3 A1
 ```
 
+As you can see there is a branch for each challenge:
+
 ![alt text](https://securedorg.github.io/flareon4/images/ch4_headercheck.png "header check")
 
+These are the timestamps of the challenges:
 ```
 57D1B2A2h       ; Challenge1.exe (Challenge1)
 57D2B0F8h       ; Dudelocker.exe (Challenge2)
 49180192h       ; kahki.exe (Challenge6)
 579E9100h       ; unkown (Challenge3)
-
 ```
 
 Each time notepad.exe is run it will check the timestamp value of itself against the next files mentioned above. All you need to do is change the timestamp of notepad.exe for every round. Use your favorite PE header editor like CFF Explorer and make the following modifications each time you run notepad.exe.
