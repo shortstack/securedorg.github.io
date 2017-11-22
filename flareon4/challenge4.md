@@ -18,7 +18,7 @@ The first part of the start function is the biggest hint. It is looking for the 
 
 ## Structure ##
 
-![alt text](https://securedorg.github.io/flareon4/images/ch4_diagram.png "diagram")
+![alt text](https://securedorg.github.io/flareon4/images/ch4_diagram.png "ch4 diagram")
 
 The binary is actually performing typical malware-like behaviors that I see all the time:
 
