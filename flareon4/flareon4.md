@@ -23,21 +23,21 @@ You can download the binaries [HERE](https://github.com/securedorg/securedorg.gi
 
 ### Challenge 4) [notepad.exe](https://securedorg.github.io/flareon4/challenge4) ### 
 
-### Challenge 5) [pewpewboat.exe](https://securedorg.github.io/flareon4/challenge5) ### 
+### Challenge 5) [pewpewboat.exe](https://securedorg.github.io/flareon4/challenge5) *pending* ### 
 
-### Challenge 6) [payload.dll](https://securedorg.github.io/flareon4/challenge6) ### 
+### Challenge 6) [payload.dll](https://securedorg.github.io/flareon4/challenge6) *pending* ### 
 
-### Challenge 7) [zsud.exe](https://securedorg.github.io/flareon4/challenge7) ### 
+### Challenge 7) [zsud.exe](https://securedorg.github.io/flareon4/challenge7) *pending* ### 
 
-### Challenge 8) [flair.apk](https://securedorg.github.io/flareon4/challenge8) ### 
+### Challenge 8) [flair.apk](https://securedorg.github.io/flareon4/challenge8) *pending* ### 
 
-### Challenge 9) [remorse.ino.hex](https://securedorg.github.io/flareon4/challenge9) ### 
+### Challenge 9) [remorse.ino.hex](https://securedorg.github.io/flareon4/challenge9) *pending* ### 
 
-### Challenge 10) [shell.php](https://securedorg.github.io/flareon4/challenge10) ### 
+### Challenge 10) [shell.php](https://securedorg.github.io/flareon4/challenge10) *pending* ### 
 
-### Challenge 11) [covfefe.exe](https://securedorg.github.io/flareon4/challenge11) ### 
+### Challenge 11) [covfefe.exe](https://securedorg.github.io/flareon4/challenge11) *pending* ### 
 
-### Challenge 12) [missing](https://securedorg.github.io/flareon4/challenge12) ### 
+### Challenge 12) [missing](https://securedorg.github.io/flareon4/challenge12) *pending* ### 
 
 
 
