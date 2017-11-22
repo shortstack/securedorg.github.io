@@ -40,7 +40,7 @@ for i in range(size):
 The 4011E6 will then take the answer array in reverse and do some bit shifting while chaining addition based on 2 bytes because of the usage of ax and cx. This value will eventually equal to 0xFB5E. 
 ![alt text](https://securedorg.github.io/flareon4/images/ch3_aglo.png "algorithm")
 
-Once the answer array runs through the algorithm, and passes the check against 0xFB5E, it will jump to the beginning of the newly modified answer array. This will end up being assembly instructions. If you are making a simple python script, you can use capstone to simply disassembly the new bytes. However, you can always just perform normal debugging.
+Once the answer array runs through the algorithm, and passes the check against 0xFB5E, it will jump to the beginning of the newly modified answer array. This will end up being assembly instructions. If you are making a simple python script, you can use capstone to simply disassemble the new bytes. However, you can always just perform normal debugging.
 
 The script below brute forces the character "flag" and also disassembles the modified bytes.
 
