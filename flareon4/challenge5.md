@@ -131,7 +131,7 @@ Patch the binary by changing 0x74 to 0x75 which will change JZ to JNZ:
 
 ## Breaking Down the Pewpew Map Data ##
 
-The first 16 bytes are the coordinates for the battelships while the next 8 bytes is the initial seed.
+The first 8 bytes are the coordinates for the battelships while the next 8 bytes is the initial seed.
 ![alt text](https://securedorg.github.io/flareon4/images/ch5_parsedmap.png "parsed map")
 
 ### Coordinates ###
