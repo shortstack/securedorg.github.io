@@ -23,7 +23,7 @@ You can download the binaries [HERE](https://github.com/securedorg/securedorg.gi
 
 ### Challenge 4) [notepad.exe](https://securedorg.github.io/flareon4/challenge4) ### 
 
-### Challenge 5) [pewpewboat.exe](https://securedorg.github.io/flareon4/challenge5) *pending* ### 
+### Challenge 5) [pewpewboat.exe](https://securedorg.github.io/flareon4/challenge5) ### 
 
 ### Challenge 6) [payload.dll](https://securedorg.github.io/flareon4/challenge6) *pending* ### 
 
