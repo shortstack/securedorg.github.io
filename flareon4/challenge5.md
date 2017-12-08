@@ -131,7 +131,7 @@ Patch the binary by changing 0x74 to 0x75 which will change JZ to JNZ:
 
 ## Breaking Down the Pewpew Map Data ##
 
-The first 16 bytes are the coordinates for the battelships while the next 8 bytes is the initial seed.
+The first 8 bytes are the coordinates for the battelships while the next 8 bytes is the initial seed.
 ![alt text](https://securedorg.github.io/flareon4/images/ch5_parsedmap.png "parsed map")
 
 ### Coordinates ###
@@ -167,7 +167,6 @@ You will begin to notice that $rax+0x8 is the coordinate you entered while $rbp-
 |0x20| A6 |
 |0x40| A7 |
 |0x80| A8 |
-
 |0x100| B1 |
 |0x200| B2 |
 |0x400| B3 |
@@ -176,7 +175,6 @@ You will begin to notice that $rax+0x8 is the coordinate you entered while $rbp-
 |0x2000| B6 |
 |0x4000| B7 |
 |0x8000| B8 |
-
 |0x10000| C1 |
 |0x20000| C2 |
 |0x40000| C3 |
@@ -185,7 +183,6 @@ You will begin to notice that $rax+0x8 is the coordinate you entered while $rbp-
 |0x200000| C6 |
 |0x400000| C7 |
 |0x800000| C8 |
-
 |0x1000000| D1 |
 |0x2000000| D2 |
 |0x4000000| D3 |
@@ -194,7 +191,6 @@ You will begin to notice that $rax+0x8 is the coordinate you entered while $rbp-
 |0x20000000| D6 |
 |0x40000000| D7 |
 |0x80000000| D8 |
-
 |0x100000000| E1 |
 |0x200000000| E2 |
 |0x400000000| E3 |
@@ -203,7 +199,6 @@ You will begin to notice that $rax+0x8 is the coordinate you entered while $rbp-
 |0x2000000000| E6 |
 |0x4000000000| E7 |
 |0x8000000000| E8 |
-
 |0x10000000000| F1 |
 |0x20000000000| F2 |
 |0x40000000000| F3 |
@@ -212,7 +207,6 @@ You will begin to notice that $rax+0x8 is the coordinate you entered while $rbp-
 |0x200000000000| F6 |
 |0x400000000000| F7 |
 |0x800000000000| F8 |
-
 |0x1000000000000| G1 |
 |0x2000000000000| G2 |
 |0x4000000000000| G3 |
@@ -221,7 +215,6 @@ You will begin to notice that $rax+0x8 is the coordinate you entered while $rbp-
 |0x20000000000000| G6 |
 |0x40000000000000| G7 |
 |0x80000000000000| G8 |
-
 |0x100000000000000| H1 |
 |0x200000000000000| H2 |
 |0x400000000000000| H3 |
@@ -252,7 +245,9 @@ PEWsea!PEWTHEPEWFINALPEWSECRETPEWCANPEWBEPEWFOUNDPEWWITHPEWONLYPEWTHEPEWUPPERPEW
 ```
 
 You will need to shuffle around the letters and use ROT13 to decode them.
+```
 OHGJURERVFGUREHZ -> BUTWHEREISTHERUM
+```
 
 ![alt text](https://securedorg.github.io/flareon4/images/ch5_finale.png "finale")
 
