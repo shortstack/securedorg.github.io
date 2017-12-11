@@ -229,5 +229,12 @@
      "location":"Christchurch",
      "country":"New Zealand",
      "link":"https://2018.chcon.nz/"
-	}
+	},
+	{
+     "name":"RVAsec",
+     "month":"June",
+     "location":"Richmond, VA",
+     "country":"United States",
+     "link":"https://rvasec.com/"
+    }
 ]
