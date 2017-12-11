@@ -154,38 +154,73 @@
      "link":"https://www.botconf.eu/"
     },
     {
-	 "name":"BSides Canberra",
-	 "month":"April",
-	 "location":"Canberra, ACT",
-	 "country":"Australia",
-	 "link":"http://www.bsidesau.com.au/"
+     "name":"BsidesLjubljana",
+     "month":"March",
+     "location":"Ljubljana",
+     "country":"Slovenia",
+     "link":"https://0x7e2.bsidesljubljana.si/"
+   },
+   {
+     "name":"Steelcon",
+     "month":"July",
+     "location":"Sheffield",
+     "country":"United Kingdom",
+     "link":"https://www.steelcon.info/"
+   },
+   {
+     "name":"BSides London",
+     "month":"June",
+     "location":"London",
+     "country":"United Kingdom",
+     "link":"https://www.securitybsides.org.uk/"
+   },
+   {
+     "name":"Blackhat EU",
+     "month":"December",
+     "location":"London",
+     "country":"United Kingdom",
+     "link":"https://www.blackhat.com/upcoming.html"
+   },
+   {
+     "name":"GreHack",
+     "month":"November",
+     "location":"Grenoble",
+     "country":"France",
+     "link":"https://grehack.fr/"
+   },
+   {
+     "name":"BSides Canberra",
+     "month":"April",
+     "location":"Canberra, ACT",
+     "country":"Australia",
+     "link":"http://www.bsidesau.com.au/"
 	},
 	{
-	 "name":"OzSecCon",
-	 "month":"June",
-	 "location":"Melbourne, Victoria",
-	 "country":"Australia",
-	 "link":"https://ozseccon.com/"
+     "name":"OzSecCon",
+     "month":"June",
+     "location":"Melbourne, Victoria",
+     "country":"Australia",
+     "link":"https://ozseccon.com/"
 	},
 	{
-	 "name":"CrikeyCon",
-	 "month":"February",
-	 "location":"Brisbane, Queensland",
-	 "country":"Australia",
-	 "link":"https://www.crikeycon.com/"
+     "name":"CrikeyCon",
+     "month":"February",
+     "location":"Brisbane, Queensland",
+     "country":"Australia",
+     "link":"https://www.crikeycon.com/"
 	},
 	{
-	 "name":"AusCert",
-	 "month":"May",
-	 "location":"Gold Coast, Queensland",
-	 "country":"Australia",
-	 "link":"https://conference.auscert.org.au/"
+     "name":"AusCert",
+     "month":"May",
+     "location":"Gold Coast, Queensland",
+     "country":"Australia",
+     "link":"https://conference.auscert.org.au/"
 	},
 	{
-	 "name":"ChCon",
-	 "month":"October/November",
-	 "location":"Christchurch",
-	 "country":"New Zealand",
-	 "link":"https://2018.chcon.nz/"
+     "name":"ChCon",
+     "month":"October/November",
+     "location":"Christchurch",
+     "country":"New Zealand",
+     "link":"https://2018.chcon.nz/"
 	}
- ]
+]
