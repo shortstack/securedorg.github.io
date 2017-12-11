@@ -1,5 +1,5 @@
 [
-	{"name": "DEFCON",
+    {"name": "DEFCON",
 	 "month":"July",
 	 "location":"Las Vegas, Nevada",
 	 "country": "United States",
@@ -100,5 +100,11 @@
 	 "location":"Santa Clara, California",
 	 "country": "United States",
 	 "link": "https://www.usenix.org/Enigma"
+    },
+    {"name": "BSidesCharm",
+	 "month":"April",
+	 "location":"Baltimore, Maryland",
+	 "country": "United States",
+	 "link": "http://www.bsidescharm.com/"
     }
  ]
