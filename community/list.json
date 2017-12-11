@@ -173,5 +173,12 @@
      "location":"London",
      "country":"United Kingdom",
      "link":"https://www.blackhat.com/upcoming.html"
-   }
+   },
+   {
+     "name":"GreHack",
+     "month":"November",
+     "location":"Grenoble",
+     "country":"France",
+     "link":"https://grehack.fr/"
+    }
  ]
