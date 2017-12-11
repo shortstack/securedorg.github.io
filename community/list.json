@@ -94,5 +94,11 @@
 	 "location":"Gent",
 	 "country": "Belgium",
 	 "link": "https://brucon.org/"
+    },
+    {"name": "Enigma",
+	 "month":"January",
+	 "location":"Santa Clara, California",
+	 "country": "United States",
+	 "link": "https://www.usenix.org/Enigma"
     }
  ]
