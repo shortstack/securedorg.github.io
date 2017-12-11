@@ -187,5 +187,40 @@
      "location":"Grenoble",
      "country":"France",
      "link":"https://grehack.fr/"
-    }
- ]
+   },
+   {
+     "name":"BSides Canberra",
+     "month":"April",
+     "location":"Canberra, ACT",
+     "country":"Australia",
+     "link":"http://www.bsidesau.com.au/"
+	},
+	{
+     "name":"OzSecCon",
+     "month":"June",
+     "location":"Melbourne, Victoria",
+     "country":"Australia",
+     "link":"https://ozseccon.com/"
+	},
+	{
+     "name":"CrikeyCon",
+     "month":"February",
+     "location":"Brisbane, Queensland",
+     "country":"Australia",
+     "link":"https://www.crikeycon.com/"
+	},
+	{
+     "name":"AusCert",
+     "month":"May",
+     "location":"Gold Coast, Queensland",
+     "country":"Australia",
+     "link":"https://conference.auscert.org.au/"
+	},
+	{
+     "name":"ChCon",
+     "month":"October/November",
+     "location":"Christchurch",
+     "country":"New Zealand",
+     "link":"https://2018.chcon.nz/"
+	}
+]
