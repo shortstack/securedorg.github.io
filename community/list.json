@@ -106,5 +106,29 @@
 	 "location":"Baltimore, Maryland",
 	 "country": "United States",
 	 "link": "http://www.bsidescharm.com/"
+    },
+    {"name": "Virus Bulliten",
+	 "month":"October",
+	 "location":"Madrid",
+	 "country": "Spain",
+	 "link": "https://www.virusbulletin.com/conference/"
+    },
+    {"name": "ZeroNights",
+	 "month":"November",
+	 "location":"Moscow",
+	 "country": "Russia",
+	 "link": "https://zeronights.org"
+    },
+    {"name": "PHDays",
+	 "month":"May",
+	 "location":"Moscow",
+	 "country": "Russia",
+	 "link": "https://www.phdays.com"
+    },
+    {"name": "Botconf",
+	 "month":"December",
+	 "location":"Montpellier",
+	 "country": "France",
+	 "link": "https://www.botconf.eu/"
     }
  ]
