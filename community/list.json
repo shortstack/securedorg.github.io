@@ -1,7 +1,7 @@
 [
     {
      "name":"DEFCON",
-     "month":"July",
+     "month":"July/August",
      "location":"Las Vegas, Nevada",
      "country":"United States",
      "link":"https://www.defcon.org/"
@@ -236,5 +236,26 @@
      "location":"Richmond, VA",
      "country":"United States",
      "link":"https://rvasec.com/"
-    }
+        },
+	{
+     "name":"LayerOne",
+     "month":"May",
+     "location":"Los Angeles, CA",
+     "country":"United States",
+     "link":"http://www.layerone.org/"
+	},
+	{
+     "name":"Toorcon",
+     "month":"August/September",
+     "location":"San Diego, CA",
+     "country":"United States",
+     "link":"https://sandiego.toorcon.net/"
+	},
+	{
+     "name":"SparkleCon",
+     "month":"January",
+     "location":"Fullerton, CA",
+     "country":"United States",
+     "link":"http://www.sparklecon.org/"
+	}
 ]
