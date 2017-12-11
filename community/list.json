@@ -46,5 +46,11 @@
 	 "location":"Las Vegas, Nevada",
 	 "country": "United States",
 	 "link": "https://www.blackhat.com"
+    },
+    {"name": "Recon",
+	 "month":"June",
+	 "location":"Montreal, Quebec",
+	 "country": "Canada",
+	 "link": "https://recon.cx/"
     }
  ]
