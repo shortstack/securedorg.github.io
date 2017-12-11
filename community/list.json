@@ -152,5 +152,12 @@
      "location":"Montpellier",
      "country":"France",
      "link":"https://www.botconf.eu/"
+    },
+    {
+     "name":"GreHack",
+     "month":"November",
+     "location":"Grenoble",
+     "country":"France",
+     "link":"https://grehack.fr/"
     }
  ]
