@@ -152,5 +152,13 @@
      "location":"Montpellier",
      "country":"France",
      "link":"https://www.botconf.eu/"
+    },
+    {
+     "name":"Hack In The Box",
+     "month":"April",
+     "location":"Amsterdam",
+     "country":"the Netherlands",
+     "link":"http://conference.hitb.org/hitbsecconf2017ams/" 
     }
+
  ]
