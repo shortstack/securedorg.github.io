@@ -152,6 +152,13 @@
      "location":"Montpellier",
      "country":"France",
      "link":"https://www.botconf.eu/"
+    },
+    {
+     "name":"BsidesLjubljana",
+     "month":"March",
+     "location":"Ljubljana",
+     "country":"Slovenia",
+     "link":"https://0x7e2.bsidesljubljana.si/"
    },
    {
      "name":"Steelcon",
