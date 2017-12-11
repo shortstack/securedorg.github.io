@@ -1,134 +1,156 @@
 [
-    {"name": "DEFCON",
-	 "month":"July",
-	 "location":"Las Vegas, Nevada",
-	 "country": "United States",
-	 "link": "https://www.defcon.org/"
+    {
+     "name":"DEFCON",
+     "month":"July",
+     "location":"Las Vegas, Nevada",
+     "country":"United States",
+     "link":"https://www.defcon.org/"
     },
-    {"name": "BSides SF",
-	 "month":"April",
-	 "location":"San Francisco, California",
-	 "country": "United States",
-	 "link": "https://bsidessf.org/"
+    {
+     "name":"BSides SF",
+     "month":"April",
+     "location":"San Francisco, California",
+     "country":"United States",
+     "link":"https://bsidessf.org/"
     },
-    {"name": "WiCyS Conference",
-	 "month":"March",
-	 "location":"Chicago, Illinois",
-	 "country": "United States",
-	 "link": "https://www.wicys.net/"
+    {
+     "name":"WiCyS Conference",
+     "month":"March",
+     "location":"Chicago, Illinois",
+     "country":"United States",
+     "link":"https://www.wicys.net/"
     },
-    {"name": "ShellCon",
-	 "month":"October",
-	 "location":"Los Angeles, California",
-	 "country": "United States",
-	 "link": "https://shellcon.io/"
+    {
+     "name":"ShellCon",
+     "month":"October",
+     "location":"Los Angeles, California",
+     "country":"United States",
+     "link":"https://shellcon.io/"
     },
-    {"name": "44CON",
-	 "month":"September",
-	 "location":"London",
-	 "country": "United Kingdom",
-	 "link": "https://44con.com/"
+    {
+     "name":"44CON",
+     "month":"September",
+     "location":"London",
+     "country":"United Kingdom",
+     "link":"https://44con.com/"
     },
-    {"name": "DerbyCon",
-	 "month":"September",
-	 "location":"Louisville, Kentucky",
-	 "country": "United States",
-	 "link": "https://www.derbycon.com/"
+    {
+     "name":"DerbyCon",
+     "month":"September",
+     "location":"Louisville, Kentucky",
+     "country":"United States",
+     "link":"https://www.derbycon.com/"
     },
-    {"name": "Shmoocon",
-	 "month":"January",
-	 "location":"Washington, D.C.",
-	 "country": "United States",
-	 "link": "http://shmoocon.org/"
+    {
+     "name":"Shmoocon",
+     "month":"January",
+     "location":"Washington, D.C.",
+     "country":"United States",
+     "link":"http://shmoocon.org/"
     },
-    {"name": "BlackHat USA",
-	 "month":"July",
-	 "location":"Las Vegas, Nevada",
-	 "country": "United States",
-	 "link": "https://www.blackhat.com"
+    {
+     "name":"BlackHat USA",
+     "month":"July",
+     "location":"Las Vegas, Nevada",
+     "country":"United States",
+     "link":"https://www.blackhat.com"
     },
-    {"name": "Recon",
-	 "month":"June",
-	 "location":"Montreal, Quebec",
-	 "country": "Canada",
-	 "link": "https://recon.cx/"
+    {
+     "name":"Recon",
+     "month":"June",
+     "location":"Montreal, Quebec",
+     "country":"Canada",
+     "link":"https://recon.cx/"
     },
-    {"name": "NBT",
-	 "month":"December",
-	 "location":"San Francisco, California",
-	 "country": "United States",
-	 "link": "https://nbt4.splashthat.com/"
+    {
+     "name":"NBT",
+     "month":"December",
+     "location":"San Francisco, California",
+     "country":"United States",
+     "link":"https://nbt4.splashthat.com/"
     },
-    {"name": "CanSecWest",
-	 "month":"March",
-	 "location":"Vancouver, British Columbia",
-	 "country": "Canada",
-	 "link": "https://cansecwest.com/"
+    {
+     "name":"CanSecWest",
+     "month":"March",
+     "location":"Vancouver, British Columbia",
+     "country":"Canada",
+     "link":"https://cansecwest.com/"
     },
-    {"name": "Infiltrate",
-	 "month":"April",
-	 "location":"Miami Beach, Florida",
-	 "country": "United States",
-	 "link": "http://infiltratecon.com/"
+    {
+     "name":"Infiltrate",
+     "month":"April",
+     "location":"Miami Beach, Florida",
+     "country":"United States",
+     "link":"http://infiltratecon.com/"
     },
-    {"name": "THOTCON",
-	 "month":"May",
-	 "location":"Chicago, Illinois",
-	 "country": "United States",
-	 "link": "https://thotcon.org/"
+    {
+     "name":"THOTCON",
+     "month":"May",
+     "location":"Chicago, Illinois",
+     "country":"United States",
+     "link":"https://thotcon.org/"
     },
-    {"name": "HackMiami",
-	 "month":"May",
-	 "location":"Miami, Florida",
-	 "country": "United States",
-	 "link": "https://www.hackmiami.com/"
+    {
+     "name":"HackMiami",
+     "month":"May",
+     "location":"Miami, Florida",
+     "country":"United States",
+     "link":"https://www.hackmiami.com/"
     },
-    {"name": "CircleCityCon",
-	 "month":"June",
-	 "location":"Indianapolis, Indiana",
-	 "country": "United States",
-	 "link": "https://circlecitycon.com/"
+    {
+     "name":"CircleCityCon",
+     "month":"June",
+     "location":"Indianapolis, Indiana",
+     "country":"United States",
+     "link":"https://circlecitycon.com/"
     },
-    {"name": "BruCON",
-	 "month":"October",
-	 "location":"Gent",
-	 "country": "Belgium",
-	 "link": "https://brucon.org/"
+    {
+     "name":"BruCON",
+     "month":"October",
+     "location":"Gent",
+     "country":"Belgium",
+     "link":"https://brucon.org/"
     },
-    {"name": "Enigma",
-	 "month":"January",
-	 "location":"Santa Clara, California",
-	 "country": "United States",
-	 "link": "https://www.usenix.org/Enigma"
+    {
+     "name":"Enigma",
+     "month":"January",
+     "location":"Santa Clara, California",
+     "country":"United States",
+     "link":"https://www.usenix.org/Enigma"
     },
-    {"name": "BSidesCharm",
-	 "month":"April",
-	 "location":"Baltimore, Maryland",
-	 "country": "United States",
-	 "link": "http://www.bsidescharm.com/"
+    {
+     "name":"BSidesCharm",
+     "month":"April",
+     "location":"Baltimore, Maryland",
+     "country":"United States",
+     "link":"http://www.bsidescharm.com/"
     },
-    {"name": "Virus Bulliten",
-	 "month":"October",
-	 "location":"Madrid",
-	 "country": "Spain",
-	 "link": "https://www.virusbulletin.com/conference/"
+    {
+     "name":"Virus Bulliten",
+     "month":"October",
+     "location":"Madrid",
+     "country":"Spain",
+     "link":"https://www.virusbulletin.com/conference/"
     },
-    {"name": "ZeroNights",
-	 "month":"November",
-	 "location":"Moscow",
-	 "country": "Russia",
-	 "link": "https://zeronights.org"
+    {
+     "name":"ZeroNights",
+     "month":"November",
+     "location":"Moscow",
+     "country":"Russia",
+     "link":"https://zeronights.org"
     },
-    {"name": "PHDays",
-	 "month":"May",
-	 "location":"Moscow",
-	 "country": "Russia",
-	 "link": "https://www.phdays.com"
+    {
+     "name":"PHDays",
+     "month":"May",
+     "location":"Moscow",
+     "country":"Russia",
+     "link":"https://www.phdays.com"
     },
-    {"name": "Botconf",
-	 "month":"December",
-	 "location":"Montpellier",
-	 "country": "France",
-	 "link": "https://www.botconf.eu/"
+    {
+     "name":"Botconf",
+     "month":"December",
+     "location":"Montpellier",
+     "country":"France",
+     "link":"https://www.botconf.eu/"
     }
  ]
