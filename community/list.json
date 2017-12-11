@@ -40,5 +40,11 @@
 	 "location":"Washington, D.C.",
 	 "country": "United States",
 	 "link": "http://shmoocon.org/"
+    },
+    {"name": "BlackHat USA",
+	 "month":"January",
+	 "location":"Las Vegas, Nevada",
+	 "country": "United States",
+	 "link": "https://www.blackhat.com"
     }
  ]
