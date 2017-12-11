@@ -75,7 +75,7 @@ title: RE Tools
   * **Graph Mode** - control flow diagram
   * **Text Mode** - default view of disassembled code
 * **Command Cheatsheet**
-  * Please refer to this [Ida cheatsheet](https://securedorg.github.io/idacheatsheet.html)
+  * Please refer to this [Ida cheatsheet](https://securedorg.github.io/RE101/idacheatsheet.html)
 * **Common Commands**
 
 | Action | Command |
