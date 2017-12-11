@@ -152,5 +152,26 @@
      "location":"Montpellier",
      "country":"France",
      "link":"https://www.botconf.eu/"
-    }
+   },
+   {
+     "name":"Steelcon",
+     "month":"July",
+     "location":"Sheffield",
+     "country":"United Kingdom",
+     "link":"https://www.steelcon.info/"
+   },
+   {
+     "name":"BSides London",
+     "month":"June",
+     "location":"London",
+     "country":"United Kingdom",
+     "link":"https://www.securitybsides.org.uk/"
+   },
+   {
+     "name":"Blackhat EU",
+     "month":"December",
+     "location":"London",
+     "country":"United Kingdom",
+     "link":"https://www.blackhat.com/upcoming.html"
+   }
  ]
