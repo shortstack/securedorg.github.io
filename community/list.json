@@ -58,5 +58,41 @@
 	 "location":"San Francisco, California",
 	 "country": "United States",
 	 "link": "https://nbt4.splashthat.com/"
+    },
+    {"name": "CanSecWest",
+	 "month":"March",
+	 "location":"Vancouver, British Columbia",
+	 "country": "Canada",
+	 "link": "https://cansecwest.com/"
+    },
+    {"name": "Infiltrate",
+	 "month":"April",
+	 "location":"Miami Beach, Florida",
+	 "country": "United States",
+	 "link": "http://infiltratecon.com/"
+    },
+    {"name": "THOTCON",
+	 "month":"May",
+	 "location":"Chicago, Illinois",
+	 "country": "United States",
+	 "link": "https://thotcon.org/"
+    },
+    {"name": "HackMiami",
+	 "month":"May",
+	 "location":"Miami, Florida",
+	 "country": "United States",
+	 "link": "https://www.hackmiami.com/"
+    },
+    {"name": "CircleCityCon",
+	 "month":"June",
+	 "location":"Indianapolis, Indiana",
+	 "country": "United States",
+	 "link": "https://circlecitycon.com/"
+    },
+    {"name": "BruCON",
+	 "month":"October",
+	 "location":"Gent",
+	 "country": "Belgium",
+	 "link": "https://brucon.org/"
     }
  ]
