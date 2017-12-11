@@ -1,0 +1,26 @@
+[
+	{"name": "DEFCON",
+	 "month":"July",
+	 "location":"Las Vegas, Nevada",
+	 "country": "USA",
+	 "link": "https://www.defcon.org/"
+    },
+    {"name": "BSides SF",
+	 "month":"April",
+	 "location":"San Francisco, CA",
+	 "country": "USA",
+	 "link": "https://bsidessf.org/"
+    },
+    {"name": "WiCyS Conference",
+	 "month":"March",
+	 "location":"Chicago, IL",
+	 "country": "USA",
+	 "link": "https://www.wicys.net/"
+    },
+    {"name": "ShellCon",
+	 "month":"October",
+	 "location":"Los Angeles, CA",
+	 "country": "USA",
+	 "link": "https://shellcon.io/"
+    }
+ ]
