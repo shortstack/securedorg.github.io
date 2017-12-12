@@ -175,7 +175,7 @@
      "link":"http://conference.hitb.org/hitbsecconf2017ams/" 
    },
    {
-     "name":"BsidesLjubljana",
+     "name":"Bsides Ljubljana",
      "month":"March",
      "location":"Ljubljana",
      "country":"Slovenia",
@@ -212,7 +212,7 @@
    {
      "name":"BSides Canberra",
      "month":"April",
-     "location":"Canberra, ACT",
+     "location":"Canberra, Australian Capital Territory",
      "country":"Australia",
      "link":"http://www.bsidesau.com.au/"
     },
@@ -289,28 +289,28 @@
     {
      "name":"RVAsec",
      "month":"June",
-     "location":"Richmond, VA",
+     "location":"Richmond, Virginia",
      "country":"United States",
      "link":"https://rvasec.com/"
     },
     {
      "name":"LayerOne",
      "month":"May",
-     "location":"Los Angeles, CA",
+     "location":"Los Angeles, California",
      "country":"United States",
      "link":"http://www.layerone.org/"
     },
     {
      "name":"Toorcon",
      "month":"August/September",
-     "location":"San Diego, CA",
+     "location":"San Diego, California",
      "country":"United States",
      "link":"https://sandiego.toorcon.net/"
     },
     {
      "name":"SparkleCon",
      "month":"January",
-     "location":"Fullerton, CA",
+     "location":"Fullerton, California",
      "country":"United States",
      "link":"http://www.sparklecon.org/"
     },
@@ -324,7 +324,7 @@
     {
      "name":"BSides PDX",
      "month":"October",
-     "location":"Portland, OR",
+     "location":"Portland, Oregon",
      "country":"United States",
      "link":"https://bsidespdx.org/"
     },
