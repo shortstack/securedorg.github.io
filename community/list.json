@@ -238,11 +238,53 @@
      "link":"https://conference.auscert.org.au/"
     },
     {
+     "name":"WAHCKon",
+     "month":"May",
+     "location":"Perth",
+     "country":"Australia",
+     "link":"https://wahckon.org.au/"
+    },
+    {
+     "name":"BSides Perth",
+     "month":"December",
+     "location":"Perth",
+     "country":"Australia",
+     "link":"https://bsidesperth.com.au/"
+    },
+    {
+     "name":"Ruxcon",
+     "month":"October",
+     "location":"Melbourne",
+     "country":"Australia",
+     "link":"https://ruxcon.org.au/"
+    },
+    {
+     "name":"Platypus Camp",
+     "month":"September",
+     "location":"Sydney",
+     "country":"Australia",
+     "link":"https://letsjusthackshit.org/"
+    },
+    {
+     "name":"TuskCon",
+     "month":"March",
+     "location":"Sunshine Coast, Queensland",
+     "country":"Australia",
+     "link":"http://tuskcon.org/"
+    },
+    {
      "name":"ChCon",
      "month":"October/November",
      "location":"Christchurch",
      "country":"New Zealand",
      "link":"https://2018.chcon.nz/"
+    },
+    {
+     "name":"BSides Wellington",
+     "month":"November",
+     "location":"Wellington",
+     "country":"New Zealand",
+     "link":"https://www.bsides.nz/"
     },
     {
      "name":"RVAsec",
