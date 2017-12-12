@@ -292,5 +292,26 @@
      "location":"Madrid",
      "country":"Spain",
      "link":"http://faqin.org/"
+    },
+    {
+     "name":"OverDrive Conference",
+     "month":"April",
+     "location":"Girona",
+     "country":"Spain",
+     "link":"http://overdriveconference.com"
+    },
+    {
+     "name":"BSides Boise",
+     "month":"November",
+     "location":"Boise, ID",
+     "country":"United States",
+     "link":"http://overdriveconference.com"
+    },
+    {
+     "name":"BSides SLC",
+     "month":"March",
+     "location":"Salt Lake City, UT",
+     "country":"United States",
+     "link":"https://bsidesslc.org/"
     }
 ]
