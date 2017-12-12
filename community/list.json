@@ -6,6 +6,13 @@
      "country":"United States",
      "link":"https://www.defcon.org/"
     },
+   {
+     "name":"BSides Seattle",
+     "month":"February",
+     "location":"Seattle, Washington",
+     "country":"United States",
+     "link":"http://www.securitybsides.com/w/page/121128486/BsidesSeattle2018"
+    },
     {
      "name":"BSides SF",
      "month":"April",
@@ -236,7 +243,7 @@
      "location":"Richmond, VA",
      "country":"United States",
      "link":"https://rvasec.com/"
-        },
+    },
     {
      "name":"LayerOne",
      "month":"May",
@@ -264,5 +271,26 @@
      "location":"Cape Town",
      "country":"South Africa",
      "link":"http://www.bsidescapetown.co.za/"
-    }  
+    },  
+    {
+     "name":"BSides PDX",
+     "month":"October",
+     "location":"Portland, OR",
+     "country":"United States",
+     "link":"https://bsidespdx.org/"
+    },
+    {
+     "name":"BSides Lisbon",
+     "month":"November",
+     "location":"Lisbon",
+     "country":"Portugal",
+     "link":"https://www.bsideslisbon.org/"
+    },
+    {
+     "name":"Faqin Con",
+     "month":"March",
+     "location":"Madrid",
+     "country":"Spain",
+     "link":"http://faqin.org/"
+    }
 ]
