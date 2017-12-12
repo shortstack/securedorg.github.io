@@ -303,14 +303,14 @@
     {
      "name":"BSides Boise",
      "month":"November",
-     "location":"Boise, ID",
+     "location":"Boise, Idaho",
      "country":"United States",
-     "link":"http://overdriveconference.com"
+     "link":"http://www.bsidesboise.org/"
     },
     {
      "name":"BSides SLC",
      "month":"March",
-     "location":"Salt Lake City, UT",
+     "location":"Salt Lake City, Utah",
      "country":"United States",
      "link":"https://bsidesslc.org/"
     }
