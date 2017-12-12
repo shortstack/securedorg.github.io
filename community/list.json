@@ -257,5 +257,12 @@
      "location":"Fullerton, CA",
      "country":"United States",
      "link":"http://www.sparklecon.org/"
+    },
+    {
+     "name":"Faqin Con",
+     "month":"March",
+     "location":"Madrid",
+     "country":"Spain",
+     "link":"http://faqin.org/"
     }
 ]
