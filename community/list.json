@@ -257,5 +257,12 @@
      "location":"Fullerton, CA",
      "country":"United States",
      "link":"http://www.sparklecon.org/"
+    },
+    {
+     "name":"BSides Lisbon",
+     "month":"November",
+     "location":"Lisbon",
+     "country":"Portugal",
+     "link":"https://www.bsideslisbon.org/"
     }
 ]
