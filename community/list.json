@@ -257,5 +257,12 @@
      "location":"Fullerton, CA",
      "country":"United States",
      "link":"http://www.sparklecon.org/"
-    }
+    },
+    {   
+     "name":"BSides Cape Town",
+     "month":"December",
+     "location":"Cape Town",
+     "country":"South Africa",
+     "link":"http://www.bsidescapetown.co.za/"
+    }  
 ]
