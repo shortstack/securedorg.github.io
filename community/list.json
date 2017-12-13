@@ -553,6 +553,55 @@
      "link":"https://bsidesslc.org/"
     },
     {
+     "name":"BSides Warsaw",
+     "month":"October",
+     "location":"Warsaw",
+     "country":"Poland",
+     "link":"https://securitybsides.pl/"
+    },
+    {
+     "name":"Security Case Study (SCS)",
+     "month":"September",
+     "location":"Warsaw",
+     "country":"Poland",
+     "link":"https://www.securitycasestudy.pl/en/"
+    },
+    {
+     "name":"x33fcon",
+     "month":"May",
+     "location":"Gdansk",
+     "country":"Poland",
+     "link":"https://www.x33fcon.com"
+    },
+    {
+     "name":"Secure",
+     "month":"October",
+     "location":"Warsaw",
+     "country":"Poland",
+     "link":"https://www.secure.edu.pl/en/"
+    },
+    {
+     "name":"Confidence",
+     "month":"June",
+     "location":"Krakow",
+     "country":"Poland",
+     "link":"https://confidence.org.pl/"
+    },
+    {
+     "name":"CyberSec",
+     "month":"October",
+     "location":"Krakow",
+     "country":"Poland",
+     "link":"https://cybersecforum.eu/en/"
+    },
+    {
+     "name":"Security PWNing",
+     "month":"November",
+     "location":"Warsaw",
+     "country":"Poland",
+     "link":"http://www.instytutpwn.pl/konferencja/pwning/"
+    },
+    {
      "name":"nullcon",
      "month":"March",
      "location":"Goa",
