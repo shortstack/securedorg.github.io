@@ -362,5 +362,12 @@
      "location":"Salt Lake City, Utah",
      "country":"United States",
      "link":"https://bsidesslc.org/"
+    },
+    {
+     "name":"Hackfest",
+     "month":"November",
+     "location":"Quebec City, Quebec",
+     "country":"Canada",
+     "link":"https://hackfest.ca/"
     }
 ]
