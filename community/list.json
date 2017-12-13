@@ -1,9 +1,16 @@
 [
     {
+      "name": "BSides Nashville",
+      "month": "April",
+      "location": "Nashville, TN",
+      "country": "United States",
+      "link": "https://bsidesnash.org/"
+    },
+    {
         "name": "AtlSecCon",
         "month": "April",
         "location": "Halifax, Nova Scotia",
-        "Country": "Canada",
+        "country": "Canada",
         "link": "https://www.atlseccon.com"
     },
     {
@@ -67,6 +74,13 @@
      "month":"July",
      "location":"Las Vegas, Nevada",
      "country":"United States",
+     "link":"https://www.blackhat.com"
+    },
+    {
+     "name":"BlackHat Asia",
+     "month":"March",
+     "location":"Singapore",
+     "country":"Singapore",
      "link":"https://www.blackhat.com"
     },
     {
@@ -173,6 +187,13 @@
      "location":"Amsterdam",
      "country":"the Netherlands",
      "link":"http://conference.hitb.org/hitbsecconf2017ams/" 
+   },
+   {
+     "name":"HITB GSEC",
+     "month":"August",
+     "location":"Singapore",
+     "country":"Singapore",
+     "link":"http://gsec.hitb.org/" 
    },
    {
      "name":"Bsides Ljubljana",
@@ -357,6 +378,174 @@
      "link":"http://www.bsidesboise.org/"
     },
     {
+     "name":"BlueHat",
+     "month":"November",
+     "location":"Redmond, WA",
+     "country":"United States",
+     "link":"https://technet.microsoft.com/en-us/security/dn456542"
+    },
+    {
+     "name":"BlueHat IL",
+     "month":"January",
+     "location":"Tel-Aviv",
+     "country":"Israel",
+     "link":"http://www.bluehatil.com/"
+    },
+    {
+     "name":"AlligatorCon",
+     "month":"August",
+     "location":"Kraków",
+     "country":"Poland",
+     "link":"http://www.alligatorcon.pl/"
+    },
+    {
+     "name":"DFIR Summit",
+     "month":"June",
+     "location":"Austin, Texas",
+     "country":"United States",
+     "link":"https://www.sans.org/event/digital-forensics-summit-2018"
+    },
+    {
+     "name":"DFRWS USA",
+     "month":"July",
+     "location":"Providence, RI",
+     "country":"United States",
+     "link":"http://www.dfrws.org/conferences/dfrws-usa-2018"
+    },
+    {
+     "name":"DFRWS EU",
+     "month":"March",
+     "location":"Florence",
+     "country":"Italy",
+     "link":"http://www.dfrws.org/conferences/dfrws-eu-2018"
+    },
+    {
+     "name":"Hack In Paris",
+     "month":"June",
+     "location":"Paris",
+     "country":"France",
+     "link":"https://hackinparis.com/"
+    },
+    {
+     "name":"HTCIA",
+     "month":"October",
+     "location":"Anaheim, CA",
+     "country":"United States",
+     "link":"http://www.htciaconference.org/events/international-conference-training-expo/event-summary-62d0a79f343040809b7f50916a7d4e8c.aspx"
+    },
+    {
+     "name":"FIRST",
+     "month":"June",
+     "location":"Kuala Lumpur",
+     "country":"Malaysia",
+     "link":"https://www.first.org/conference/"
+    },
+    {
+     "name":"EnFuse",
+     "month":"May",
+     "location":"Las Vegas, Nevada",
+     "country":"United States",
+     "link":"https://www.guidancesoftware.com/enfuse-conference/about"
+    },
+    {
+     "name":"EkoParty",
+     "month":"September",
+     "location":"Buenos Aires",
+     "country":"Argentina",
+     "link":"http://www.ekoparty.org/"
+    },
+    {
+     "name":"H2HC",
+     "month":"October",
+     "location":"São Paulo",
+     "country":"Brazil",
+     "link":"https://www.h2hc.com.br"
+    },
+    {
+     "name":"Hackfest",
+     "month":"November",
+     "location":"Quebec",
+     "country":"Canada",
+     "link":"https://hackfest.ca/en/cfp/"
+    },
+    {
+     "name":"ISOI",
+     "month":"April",
+     "location":"Victoria, B.C.",
+     "country":"Canada",
+     "link":"http://www.isotf.org/isoi20.html"
+    },
+    {
+     "name":"InfoSec World",
+     "month":"March",
+     "location":"Lake Buena Vista, Florida",
+     "country":"England",
+     "link":"http://infosecworld.misti.com/"
+    },
+    {
+     "name":"InfoSececurity Europe",
+     "month":"June",
+     "location":"London",
+     "country":"United States",
+     "link":"http://www.infosecurityeurope.com/about/"
+    },
+    {
+     "name":"OWASP AppSec Europe",
+     "month":"June",
+     "location":"Tel-Aviv",
+     "country":"Israel",
+     "link":"https://2018.appsec.eu/"
+    },
+    {
+     "name":"OSDFCon",
+     "month":"October",
+     "location":"Herndon, VA",
+     "country":"United States",
+     "link":"https://www.osdfcon.org/"
+    },
+    {
+     "name":"Nuit du Hack",
+     "month":"June/July",
+     "location":"Paris",
+     "country":"France",
+     "link":"https://nuitduhack.com/en"
+    },
+    {
+     "name":"RootCon",
+     "month":"September",
+     "location":"Tagaytay",
+     "country":"Philippines",
+     "link":"https://www.rootcon.org/"
+    },
+    {
+     "name":"RSA",
+     "month":"April",
+     "location":"San Francisco",
+     "country":"United States",
+     "link":"https://www.rsaconference.com/events"
+    },
+    {
+     "name":"SecTor",
+     "month":"October",
+     "location":"Toronto",
+     "country":"Canada",
+     "link":"https://sector.ca/"
+    },
+    {
+     "name":"SyScan360",
+     "month":"March",
+     "location":"Singapore",
+     "country":"Singapore",
+     "link":"http://www.syscan360.org/"
+    },
+    {
+     "name":"Source",
+     "month":"February",
+     "location":"Mesa, AZ",
+     "country":"United States",
+     "link":"https://www.sourceconference.com/"
+    },
+    {
      "name":"BSides SLC",
      "month":"March",
      "location":"Salt Lake City, Utah",
@@ -411,5 +600,124 @@
      "location":"Warsaw",
      "country":"Poland",
      "link":"http://www.instytutpwn.pl/konferencja/pwning/"
+    },
+    {
+     "name":"nullcon",
+     "month":"March",
+     "location":"Goa",
+     "country":"India",
+     "link":"https://nullcon.net/website/"
+    },
+    {
+     "name":"BSides Delhi",
+     "month":"October",
+     "location":"New Delhi",
+     "country":"India",
+     "link":"https://bsidesdelhi.in/"
+    },
+    {
+     "name":"HAKON",
+     "month":"October",
+     "location":"Indore, Madhya Pradesh",
+     "country":"India",
+     "link":"http://www.hakonindia.org/"
+    },
+    {
+     "name":"1337con",
+     "month":"October",
+     "location":"Patna, Bihar",
+     "country":"India",
+     "link":"http://www.1337con.org/index.php"
+    },
+    {
+     "name":"SISA Summit",
+     "month":"February",
+     "location":"Mumbai, Maharashtra",
+     "country":"India",
+     "link":"https://sisainfosec.com/sisa-summit-2016/"
+    },
+    {
+     "name":"Cyber Radiance",
+     "month":"February",
+     "location":"Lucknow, Maharashtra",
+     "country":"India",
+     "link":"http://www.cyberzone.org.in/cyber-radiance.html"
+    },
+    {
+     "name":"International Conference on Cyber Security",
+     "month":"August",
+     "location":"Kota, Rajasthan",
+     "country":"India",
+     "link":"http://www.iccs2017.iaasse.org/"
+    },
+    {
+     "name":"c0c0n X",
+     "month":"August",
+     "location":"Kochi, Kerala",
+     "country":"India",
+     "link":"http://is-ra.org/c0c0n/"
+    },
+    {
+     "name":"International Conference on Cyber Law, Cyber Crime & Cyber Security",
+     "month":"November",
+     "location":"New Delhi",
+     "country":"India",
+     "link":"http://cyberlawcybercrime.com/"
+    },
+    {
+     "name":"India Security Conference",
+     "month":"September",
+     "location":"Mumbai, Maharashtra",
+     "country":"India",
+     "link":"www.indiasecurityx.com"
+    },
+    {
+     "name":"CyFy: The India Conference on Cyber Security and Internet Governance ",
+     "month":"October",
+     "location":"New Delhi",
+     "country":"India",
+     "link":"http://www.orfonline.org/cyfy/"
+    },
+    {
+     "name":"IFSEC India",
+     "month":"December",
+     "location":"New Delhi",
+     "country":"India",
+     "link":"https://www.ifsec.events/india/"
+    },
+    {
+     "name":"Hackfest",
+     "month":"November",
+     "location":"Quebec City, Quebec",
+     "country":"Canada",
+     "link":"https://hackfest.ca/"
+    },
+    {
+     "name":"SecTor",
+     "month":"November",
+     "location":"Toronto Ontario",
+     "country":"Canada",
+     "link":"https://sector.ca/"
+    },
+    {
+     "name":"COUNTERMEASURE",
+     "month":"November",
+     "location":"Ottawa, Ontario",
+     "country":"Canada",
+     "link":"https://www.countermeasure.ca"
+    },
+    {
+     "name":"BSides Ottawa",
+     "month":"October",
+     "location":"Ottawa, Ontario",
+     "country":"Canada",
+     "link":"http://www.bsidesottawa.ca/"
+    },
+    {
+     "name":"BSides Toronto",
+     "month":"November",
+     "location":"Toronto, Ontario",
+     "country":"Canada",
+     "link":"http://www.bsidesto.ca/"
     }
 ]
