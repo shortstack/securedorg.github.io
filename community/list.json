@@ -1,5 +1,12 @@
 [
     {
+      "name": "BSides Nashville",
+      "month": "April",
+      "location": "Nashville, TN",
+      "country": "United States",
+      "link": "https://bsidesnash.org/"
+    },
+    {
         "name": "AtlSecCon",
         "month": "April",
         "location": "Halifax, Nova Scotia",
