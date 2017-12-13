@@ -362,5 +362,40 @@
      "location":"Salt Lake City, Utah",
      "country":"United States",
      "link":"https://bsidesslc.org/"
+    },
+    {
+     "name":"Hackfest",
+     "month":"November",
+     "location":"Quebec City, Quebec",
+     "country":"Canada",
+     "link":"https://hackfest.ca/"
+    },
+    {
+     "name":"SecTor",
+     "month":"November",
+     "location":"Toronto Ontario",
+     "country":"Canada",
+     "link":"https://sector.ca/"
+    },
+    {
+     "name":"COUNTERMEASURE",
+     "month":"November",
+     "location":"Ottawa, Ontario",
+     "country":"Canada",
+     "link":"https://www.countermeasure.ca"
+    },
+    {
+     "name":"BSides Ottawa",
+     "month":"October",
+     "location":"Ottawa, Ontario",
+     "country":"Canada",
+     "link":"http://www.bsidesottawa.ca/"
+    },
+    {
+     "name":"BSides Toronto",
+     "month":"November",
+     "location":"Toronto, Ontario",
+     "country":"Canada",
+     "link":"http://www.bsidesto.ca/"
     }
 ]
