@@ -364,6 +364,90 @@
      "link":"https://bsidesslc.org/"
     },
     {
+     "name":"nullcon",
+     "month":"March",
+     "location":"Goa",
+     "country":"India",
+     "link":"https://nullcon.net/website/"
+    },
+    {
+     "name":"BSides Delhi",
+     "month":"October",
+     "location":"New Delhi",
+     "country":"India",
+     "link":"https://bsidesdelhi.in/"
+    },
+    {
+     "name":"HAKON",
+     "month":"October",
+     "location":"Indore, Madhya Pradesh",
+     "country":"India",
+     "link":"http://www.hakonindia.org/"
+    },
+    {
+     "name":"1337con",
+     "month":"October",
+     "location":"Patna, Bihar",
+     "country":"India",
+     "link":"http://www.1337con.org/index.php"
+    },
+    {
+     "name":"SISA Summit",
+     "month":"February",
+     "location":"Mumbai, Maharashtra",
+     "country":"India",
+     "link":"https://sisainfosec.com/sisa-summit-2016/"
+    },
+    {
+     "name":"Cyber Radiance",
+     "month":"February",
+     "location":"Lucknow, Maharashtra",
+     "country":"India",
+     "link":"http://www.cyberzone.org.in/cyber-radiance.html"
+    },
+    {
+     "name":"International Conference on Cyber Security",
+     "month":"August",
+     "location":"Kota, Rajasthan",
+     "country":"India",
+     "link":"http://www.iccs2017.iaasse.org/"
+    },
+    {
+     "name":"c0c0n X",
+     "month":"August",
+     "location":"Kochi, Kerala",
+     "country":"India",
+     "link":"http://is-ra.org/c0c0n/"
+    },
+    {
+     "name":"International Conference on Cyber Law, Cyber Crime & Cyber Security",
+     "month":"November",
+     "location":"New Delhi",
+     "country":"India",
+     "link":"http://cyberlawcybercrime.com/"
+    },
+    {
+     "name":"India Security Conference",
+     "month":"September",
+     "location":"Mumbai, Maharashtra",
+     "country":"India",
+     "link":"www.indiasecurityx.com"
+    },
+    {
+     "name":"CyFy: The India Conference on Cyber Security and Internet Governance ",
+     "month":"October",
+     "location":"New Delhi",
+     "country":"India",
+     "link":"http://www.orfonline.org/cyfy/"
+    },
+    {
+     "name":"IFSEC India",
+     "month":"December",
+     "location":"New Delhi",
+     "country":"India",
+     "link":"https://www.ifsec.events/india/"
+    },
+    {
      "name":"Hackfest",
      "month":"November",
      "location":"Quebec City, Quebec",
