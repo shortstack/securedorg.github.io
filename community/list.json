@@ -186,14 +186,14 @@
      "month":"April",
      "location":"Amsterdam",
      "country":"the Netherlands",
-     "link":"http://conference.hitb.org/hitbsecconf2017ams/" 
+     "link":"http://conference.hitb.org/hitbsecconf2017ams/"
    },
    {
      "name":"HITB GSEC",
      "month":"August",
      "location":"Singapore",
      "country":"Singapore",
-     "link":"http://gsec.hitb.org/" 
+     "link":"http://gsec.hitb.org/"
    },
    {
      "name":"Bsides Ljubljana",
@@ -335,13 +335,13 @@
      "country":"United States",
      "link":"http://www.sparklecon.org/"
     },
-    {   
+    {
      "name":"BSides Cape Town",
      "month":"December",
      "location":"Cape Town",
      "country":"South Africa",
      "link":"http://www.bsidescapetown.co.za/"
-    },  
+    },
     {
      "name":"BSides PDX",
      "month":"October",
@@ -719,5 +719,12 @@
      "location":"Toronto, Ontario",
      "country":"Canada",
      "link":"http://www.bsidesto.ca/"
+    },
+    {
+     "name":"BSides Charleston",
+     "month":"November",
+     "location":"Charleston, South Carolina",
+     "country":"United States",
+     "link":"http://bsidescharleston.com"
     }
 ]
