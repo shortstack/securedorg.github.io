@@ -726,5 +726,12 @@
      "location":"Charleston, South Carolina",
      "country":"United States",
      "link":"http://bsidescharleston.com"
+    },
+    {
+     "name":"CarolinaCon",
+     "month":"April",
+     "location":"Raleigh, North Carolina",
+     "country":"United States",
+     "link":"http://carolinacon.org/"
     }
 ]
